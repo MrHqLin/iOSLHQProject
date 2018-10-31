@@ -6,13 +6,13 @@
 //  Copyright © 2018年 water. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "LHQAppDelegate.h"
 
-@interface AppDelegate ()
+@interface LHQAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation LHQAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
