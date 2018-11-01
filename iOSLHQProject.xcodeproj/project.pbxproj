@@ -3,18 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA7F2C90218AA44900DBE4B7 /* LHQNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2C8F218AA44900DBE4B7 /* LHQNavigationBar.m */; };
+		BA7F2C96218ACABB00DBE4B7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2C95218ACABB00DBE4B7 /* UIView+Frame.m */; };
+		BA7F2C9C218AD64400DBE4B7 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2C99218AD64400DBE4B7 /* UIColor+Random.m */; };
+		BA7F2C9F218AD6AB00DBE4B7 /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2C9E218AD6AB00DBE4B7 /* MBProgressHUD+Extension.m */; };
+		BA7F2CA6218AD7FB00DBE4B7 /* LHQRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2CA1218AD7FA00DBE4B7 /* LHQRequestManager.m */; };
+		BA7F2CA7218AD7FB00DBE4B7 /* LHQBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2CA2218AD7FB00DBE4B7 /* LHQBaseRequest.m */; };
+		BA7F2CA8218AD7FB00DBE4B7 /* LHQBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2CA4218AD7FB00DBE4B7 /* LHQBaseResponse.m */; };
+		BA7F2CAE218ADF8200DBE4B7 /* LHQNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2CAD218ADF8200DBE4B7 /* LHQNavigationVC.m */; };
+		BA7F2CB1218AE05900DBE4B7 /* LHQNavUIBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2CB0218AE05900DBE4B7 /* LHQNavUIBaseVC.m */; };
+		BA7F2CB4218AF0FE00DBE4B7 /* LHQTextViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2CB3218AF0FE00DBE4B7 /* LHQTextViewVC.m */; };
+		BA7F2CB7218AF49C00DBE4B7 /* LHQRequestBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2CB6218AF49C00DBE4B7 /* LHQRequestBaseVC.m */; };
+		BA7F2CBA218AF8D100DBE4B7 /* LHQBaseViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2CB9218AF8D100DBE4B7 /* LHQBaseViewVC.m */; };
+		BA7F2CBD218AFA0100DBE4B7 /* LHQTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2CBC218AFA0100DBE4B7 /* LHQTableViewVC.m */; };
 		BA94EEF92189B2F4006952FB /* LHQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94EEF82189B2F4006952FB /* LHQAppDelegate.m */; };
-		BA94EEFC2189B2F4006952FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94EEFB2189B2F4006952FB /* ViewController.m */; };
 		BA94EEFF2189B2F4006952FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA94EEFD2189B2F4006952FB /* Main.storyboard */; };
 		BA94EF012189B2F8006952FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA94EF002189B2F8006952FB /* Assets.xcassets */; };
 		BA94EF042189B2F8006952FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA94EF022189B2F8006952FB /* LaunchScreen.storyboard */; };
 		BA94EF072189B2F8006952FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94EF062189B2F8006952FB /* main.m */; };
 		BA94EF112189B2F8006952FB /* iOSLHQProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94EF102189B2F8006952FB /* iOSLHQProjectTests.m */; };
 		BA94EF1C2189B2F8006952FB /* iOSLHQProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94EF1B2189B2F8006952FB /* iOSLHQProjectUITests.m */; };
+		C1BFB8ADC4AC1EA558A49E35 /* libPods-iOSLHQProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 425E8D2EFE09A57C73A467D9 /* libPods-iOSLHQProjectTests.a */; };
+		E19308F8A9605E676FE5859D /* libPods-iOSLHQProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BD98021FADACBB876D6B07 /* libPods-iOSLHQProjectUITests.a */; };
+		ECF76A93B5914666276A9361 /* libPods-iOSLHQProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9A7FCB0EAC322478515E /* libPods-iOSLHQProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +50,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		195117ADA40471B0313FAF9E /* Pods-iOSLHQProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProjectUITests/Pods-iOSLHQProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B9AB57AF026A6A5C471A8A3 /* Pods-iOSLHQProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProjectUITests/Pods-iOSLHQProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		425E8D2EFE09A57C73A467D9 /* libPods-iOSLHQProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLHQProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81345AF9BDABDE5079C632B2 /* Pods-iOSLHQProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject.debug.xcconfig"; sourceTree = "<group>"; };
+		9348A350A515967F17BCC6AD /* Pods-iOSLHQProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProjectTests/Pods-iOSLHQProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C2B81B0CDC8293DB9824FA1 /* Pods-iOSLHQProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject.release.xcconfig"; sourceTree = "<group>"; };
+		BA7F2C81218A9EED00DBE4B7 /* LHQiOSProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQiOSProject.pch; sourceTree = "<group>"; };
+		BA7F2C8E218AA44900DBE4B7 /* LHQNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQNavigationBar.h; sourceTree = "<group>"; };
+		BA7F2C8F218AA44900DBE4B7 /* LHQNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQNavigationBar.m; sourceTree = "<group>"; };
+		BA7F2C94218ACABB00DBE4B7 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		BA7F2C95218ACABB00DBE4B7 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		BA7F2C97218AD64400DBE4B7 /* UIColor+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Random.h"; sourceTree = "<group>"; };
+		BA7F2C99218AD64400DBE4B7 /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
+		BA7F2C9D218AD6AB00DBE4B7 /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		BA7F2C9E218AD6AB00DBE4B7 /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		BA7F2CA0218AD7FA00DBE4B7 /* LHQRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQRequestManager.h; sourceTree = "<group>"; };
+		BA7F2CA1218AD7FA00DBE4B7 /* LHQRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQRequestManager.m; sourceTree = "<group>"; };
+		BA7F2CA2218AD7FB00DBE4B7 /* LHQBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQBaseRequest.m; sourceTree = "<group>"; };
+		BA7F2CA3218AD7FB00DBE4B7 /* LHQBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQBaseResponse.h; sourceTree = "<group>"; };
+		BA7F2CA4218AD7FB00DBE4B7 /* LHQBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQBaseResponse.m; sourceTree = "<group>"; };
+		BA7F2CA5218AD7FB00DBE4B7 /* LHQBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQBaseRequest.h; sourceTree = "<group>"; };
+		BA7F2CAC218ADF8200DBE4B7 /* LHQNavigationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQNavigationVC.h; sourceTree = "<group>"; };
+		BA7F2CAD218ADF8200DBE4B7 /* LHQNavigationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQNavigationVC.m; sourceTree = "<group>"; };
+		BA7F2CAF218AE05900DBE4B7 /* LHQNavUIBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQNavUIBaseVC.h; sourceTree = "<group>"; };
+		BA7F2CB0218AE05900DBE4B7 /* LHQNavUIBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQNavUIBaseVC.m; sourceTree = "<group>"; };
+		BA7F2CB2218AF0FE00DBE4B7 /* LHQTextViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQTextViewVC.h; sourceTree = "<group>"; };
+		BA7F2CB3218AF0FE00DBE4B7 /* LHQTextViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQTextViewVC.m; sourceTree = "<group>"; };
+		BA7F2CB5218AF49C00DBE4B7 /* LHQRequestBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQRequestBaseVC.h; sourceTree = "<group>"; };
+		BA7F2CB6218AF49C00DBE4B7 /* LHQRequestBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQRequestBaseVC.m; sourceTree = "<group>"; };
+		BA7F2CB8218AF8D100DBE4B7 /* LHQBaseViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQBaseViewVC.h; sourceTree = "<group>"; };
+		BA7F2CB9218AF8D100DBE4B7 /* LHQBaseViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQBaseViewVC.m; sourceTree = "<group>"; };
+		BA7F2CBB218AFA0100DBE4B7 /* LHQTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQTableViewVC.h; sourceTree = "<group>"; };
+		BA7F2CBC218AFA0100DBE4B7 /* LHQTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQTableViewVC.m; sourceTree = "<group>"; };
 		BA94EEF42189B2F4006952FB /* iOSLHQProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLHQProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA94EEF72189B2F4006952FB /* LHQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQAppDelegate.h; sourceTree = "<group>"; };
 		BA94EEF82189B2F4006952FB /* LHQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQAppDelegate.m; sourceTree = "<group>"; };
-		BA94EEFA2189B2F4006952FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BA94EEFB2189B2F4006952FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BA94EEFE2189B2F4006952FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA94EF002189B2F8006952FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA94EF032189B2F8006952FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +97,9 @@
 		BA94EF172189B2F8006952FB /* iOSLHQProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLHQProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA94EF1B2189B2F8006952FB /* iOSLHQProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSLHQProjectUITests.m; sourceTree = "<group>"; };
 		BA94EF1D2189B2F8006952FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF4B9A7FCB0EAC322478515E /* libPods-iOSLHQProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLHQProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31F5B047DC7808A1333BC75 /* Pods-iOSLHQProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProjectTests/Pods-iOSLHQProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2BD98021FADACBB876D6B07 /* libPods-iOSLHQProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLHQProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF76A93B5914666276A9361 /* libPods-iOSLHQProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1BFB8ADC4AC1EA558A49E35 /* libPods-iOSLHQProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +123,140 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19308F8A9605E676FE5859D /* libPods-iOSLHQProjectUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ED2F5C7EB3B95B2DC75779F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81345AF9BDABDE5079C632B2 /* Pods-iOSLHQProject.debug.xcconfig */,
+				9C2B81B0CDC8293DB9824FA1 /* Pods-iOSLHQProject.release.xcconfig */,
+				9348A350A515967F17BCC6AD /* Pods-iOSLHQProjectTests.debug.xcconfig */,
+				E31F5B047DC7808A1333BC75 /* Pods-iOSLHQProjectTests.release.xcconfig */,
+				2B9AB57AF026A6A5C471A8A3 /* Pods-iOSLHQProjectUITests.debug.xcconfig */,
+				195117ADA40471B0313FAF9E /* Pods-iOSLHQProjectUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA7F2C82218AA06000DBE4B7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F2C83218AA07500DBE4B7 /* Network */,
+				BA7F2C84218AA09800DBE4B7 /* Category */,
+				BA7F2C85218AA0A900DBE4B7 /* Helpers */,
+				BA7F2C86218AA0BE00DBE4B7 /* LHQBase */,
+				BA7F2C87218AA33700DBE4B7 /* LHQControllers */,
+				BA7F2C88218AA34C00DBE4B7 /* LHQViews */,
+				BA7F2C89218AA37500DBE4B7 /* LHQModels */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BA7F2C83218AA07500DBE4B7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F2CA5218AD7FB00DBE4B7 /* LHQBaseRequest.h */,
+				BA7F2CA2218AD7FB00DBE4B7 /* LHQBaseRequest.m */,
+				BA7F2CA3218AD7FB00DBE4B7 /* LHQBaseResponse.h */,
+				BA7F2CA4218AD7FB00DBE4B7 /* LHQBaseResponse.m */,
+				BA7F2CA0218AD7FA00DBE4B7 /* LHQRequestManager.h */,
+				BA7F2CA1218AD7FA00DBE4B7 /* LHQRequestManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BA7F2C84218AA09800DBE4B7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F2C94218ACABB00DBE4B7 /* UIView+Frame.h */,
+				BA7F2C95218ACABB00DBE4B7 /* UIView+Frame.m */,
+				BA7F2C97218AD64400DBE4B7 /* UIColor+Random.h */,
+				BA7F2C99218AD64400DBE4B7 /* UIColor+Random.m */,
+				BA7F2C9D218AD6AB00DBE4B7 /* MBProgressHUD+Extension.h */,
+				BA7F2C9E218AD6AB00DBE4B7 /* MBProgressHUD+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		BA7F2C85218AA0A900DBE4B7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BA7F2C86218AA0BE00DBE4B7 /* LHQBase */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F2C8B218AA3BC00DBE4B7 /* BaseControllers */,
+				BA7F2C8C218AA3E100DBE4B7 /* BaseViews */,
+				BA7F2C8D218AA3F600DBE4B7 /* BaseModels */,
+			);
+			path = LHQBase;
+			sourceTree = "<group>";
+		};
+		BA7F2C87218AA33700DBE4B7 /* LHQControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LHQControllers;
+			sourceTree = "<group>";
+		};
+		BA7F2C88218AA34C00DBE4B7 /* LHQViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LHQViews;
+			sourceTree = "<group>";
+		};
+		BA7F2C89218AA37500DBE4B7 /* LHQModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LHQModels;
+			path = LHQViews;
+			sourceTree = "<group>";
+		};
+		BA7F2C8B218AA3BC00DBE4B7 /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F2CAC218ADF8200DBE4B7 /* LHQNavigationVC.h */,
+				BA7F2CAD218ADF8200DBE4B7 /* LHQNavigationVC.m */,
+				BA7F2CAF218AE05900DBE4B7 /* LHQNavUIBaseVC.h */,
+				BA7F2CB0218AE05900DBE4B7 /* LHQNavUIBaseVC.m */,
+				BA7F2CB2218AF0FE00DBE4B7 /* LHQTextViewVC.h */,
+				BA7F2CB3218AF0FE00DBE4B7 /* LHQTextViewVC.m */,
+				BA7F2CB5218AF49C00DBE4B7 /* LHQRequestBaseVC.h */,
+				BA7F2CB6218AF49C00DBE4B7 /* LHQRequestBaseVC.m */,
+				BA7F2CB8218AF8D100DBE4B7 /* LHQBaseViewVC.h */,
+				BA7F2CB9218AF8D100DBE4B7 /* LHQBaseViewVC.m */,
+				BA7F2CBB218AFA0100DBE4B7 /* LHQTableViewVC.h */,
+				BA7F2CBC218AFA0100DBE4B7 /* LHQTableViewVC.m */,
+			);
+			path = BaseControllers;
+			sourceTree = "<group>";
+		};
+		BA7F2C8C218AA3E100DBE4B7 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				BA7F2C8E218AA44900DBE4B7 /* LHQNavigationBar.h */,
+				BA7F2C8F218AA44900DBE4B7 /* LHQNavigationBar.m */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		BA7F2C8D218AA3F600DBE4B7 /* BaseModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseModels;
+			sourceTree = "<group>";
+		};
 		BA94EEEB2189B2F4006952FB = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +264,8 @@
 				BA94EF0F2189B2F8006952FB /* iOSLHQProjectTests */,
 				BA94EF1A2189B2F8006952FB /* iOSLHQProjectUITests */,
 				BA94EEF52189B2F4006952FB /* Products */,
+				0ED2F5C7EB3B95B2DC75779F /* Pods */,
+				C307DB285480230252B8E274 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +284,10 @@
 			children = (
 				BA94EF052189B2F8006952FB /* Info.plist */,
 				BA94EF062189B2F8006952FB /* main.m */,
+				BA7F2C81218A9EED00DBE4B7 /* LHQiOSProject.pch */,
 				BA94EEF72189B2F4006952FB /* LHQAppDelegate.h */,
 				BA94EEF82189B2F4006952FB /* LHQAppDelegate.m */,
-				BA94EEFA2189B2F4006952FB /* ViewController.h */,
-				BA94EEFB2189B2F4006952FB /* ViewController.m */,
+				BA7F2C82218AA06000DBE4B7 /* Classes */,
 				BA94EF002189B2F8006952FB /* Assets.xcassets */,
 				BA94EEFD2189B2F4006952FB /* Main.storyboard */,
 				BA94EF022189B2F8006952FB /* LaunchScreen.storyboard */,
@@ -132,6 +313,16 @@
 			path = iOSLHQProjectUITests;
 			sourceTree = "<group>";
 		};
+		C307DB285480230252B8E274 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF4B9A7FCB0EAC322478515E /* libPods-iOSLHQProject.a */,
+				425E8D2EFE09A57C73A467D9 /* libPods-iOSLHQProjectTests.a */,
+				F2BD98021FADACBB876D6B07 /* libPods-iOSLHQProjectUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +330,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA94EF202189B2F8006952FB /* Build configuration list for PBXNativeTarget "iOSLHQProject" */;
 			buildPhases = (
+				A7473626EBD5B4F2BB559EBC /* [CP] Check Pods Manifest.lock */,
 				BA94EEF02189B2F4006952FB /* Sources */,
 				BA94EEF12189B2F4006952FB /* Frameworks */,
 				BA94EEF22189B2F4006952FB /* Resources */,
+				EF306622E0A014B2A298757F /* [CP] Embed Pods Frameworks */,
+				8BD459DD04332E35762A993E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +350,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA94EF232189B2F8006952FB /* Build configuration list for PBXNativeTarget "iOSLHQProjectTests" */;
 			buildPhases = (
+				FB88DBF5D7D1338D9979688D /* [CP] Check Pods Manifest.lock */,
 				BA94EF082189B2F8006952FB /* Sources */,
 				BA94EF092189B2F8006952FB /* Frameworks */,
 				BA94EF0A2189B2F8006952FB /* Resources */,
+				D180F120CA42E006DC9291D5 /* [CP] Embed Pods Frameworks */,
+				F4D01E2D05F079D242EBAF7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +371,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA94EF262189B2F8006952FB /* Build configuration list for PBXNativeTarget "iOSLHQProjectUITests" */;
 			buildPhases = (
+				3872465386ABA877FA84A379 /* [CP] Check Pods Manifest.lock */,
 				BA94EF132189B2F8006952FB /* Sources */,
 				BA94EF142189B2F8006952FB /* Frameworks */,
 				BA94EF152189B2F8006952FB /* Resources */,
+				A072936E62A26A94B648126C /* [CP] Embed Pods Frameworks */,
+				F6682BCB5FBAF13F2DD01DBB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,19 +399,22 @@
 				TargetAttributes = {
 					BA94EEF32189B2F4006952FB = {
 						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 					};
 					BA94EF0B2189B2F8006952FB = {
 						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 						TestTargetID = BA94EEF32189B2F4006952FB;
 					};
 					BA94EF162189B2F8006952FB = {
 						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
 						TestTargetID = BA94EEF32189B2F4006952FB;
 					};
 				};
 			};
 			buildConfigurationList = BA94EEEF2189B2F4006952FB /* Build configuration list for PBXProject "iOSLHQProject" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -257,14 +460,176 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3872465386ABA877FA84A379 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLHQProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BD459DD04332E35762A993E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A072936E62A26A94B648126C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLHQProjectUITests/Pods-iOSLHQProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7473626EBD5B4F2BB559EBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLHQProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D180F120CA42E006DC9291D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLHQProjectTests/Pods-iOSLHQProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF306622E0A014B2A298757F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4D01E2D05F079D242EBAF7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLHQProjectTests/Pods-iOSLHQProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6682BCB5FBAF13F2DD01DBB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSLHQProjectUITests/Pods-iOSLHQProjectUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB88DBF5D7D1338D9979688D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSLHQProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA94EEF02189B2F4006952FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA94EEFC2189B2F4006952FB /* ViewController.m in Sources */,
+				BA7F2C9C218AD64400DBE4B7 /* UIColor+Random.m in Sources */,
+				BA7F2C96218ACABB00DBE4B7 /* UIView+Frame.m in Sources */,
+				BA7F2CBA218AF8D100DBE4B7 /* LHQBaseViewVC.m in Sources */,
+				BA7F2CA7218AD7FB00DBE4B7 /* LHQBaseRequest.m in Sources */,
 				BA94EF072189B2F8006952FB /* main.m in Sources */,
+				BA7F2CB4218AF0FE00DBE4B7 /* LHQTextViewVC.m in Sources */,
+				BA7F2CA6218AD7FB00DBE4B7 /* LHQRequestManager.m in Sources */,
+				BA7F2CB1218AE05900DBE4B7 /* LHQNavUIBaseVC.m in Sources */,
+				BA7F2C90218AA44900DBE4B7 /* LHQNavigationBar.m in Sources */,
+				BA7F2CB7218AF49C00DBE4B7 /* LHQRequestBaseVC.m in Sources */,
+				BA7F2CBD218AFA0100DBE4B7 /* LHQTableViewVC.m in Sources */,
+				BA7F2CAE218ADF8200DBE4B7 /* LHQNavigationVC.m in Sources */,
+				BA7F2CA8218AD7FB00DBE4B7 /* LHQBaseResponse.m in Sources */,
 				BA94EEF92189B2F4006952FB /* LHQAppDelegate.m in Sources */,
+				BA7F2C9F218AD6AB00DBE4B7 /* MBProgressHUD+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,16 +798,16 @@
 		};
 		BA94EF212189B2F8006952FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81345AF9BDABDE5079C632B2 /* Pods-iOSLHQProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iOSLHQProject/LHQiOSProject.pch;
 				INFOPLIST_FILE = iOSLHQProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iotapk.www.superApp.iOSLHQProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -451,16 +816,16 @@
 		};
 		BA94EF222189B2F8006952FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C2B81B0CDC8293DB9824FA1 /* Pods-iOSLHQProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iOSLHQProject/LHQiOSProject.pch;
 				INFOPLIST_FILE = iOSLHQProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iotapk.www.superApp.iOSLHQProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -469,16 +834,13 @@
 		};
 		BA94EF242189B2F8006952FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9348A350A515967F17BCC6AD /* Pods-iOSLHQProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;
 				INFOPLIST_FILE = iOSLHQProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iotapk.www.superApp.iOSLHQProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,16 +850,13 @@
 		};
 		BA94EF252189B2F8006952FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E31F5B047DC7808A1333BC75 /* Pods-iOSLHQProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;
 				INFOPLIST_FILE = iOSLHQProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iotapk.www.superApp.iOSLHQProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,15 +866,12 @@
 		};
 		BA94EF272189B2F8006952FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B9AB57AF026A6A5C471A8A3 /* Pods-iOSLHQProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;
 				INFOPLIST_FILE = iOSLHQProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iotapk.www.superApp.iOSLHQProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,15 +881,12 @@
 		};
 		BA94EF282189B2F8006952FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 195117ADA40471B0313FAF9E /* Pods-iOSLHQProjectUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TDPT6UAW97;
 				INFOPLIST_FILE = iOSLHQProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iotapk.www.superApp.iOSLHQProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
