@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA21B29E218BF0A4002DB83F /* LHQStaticTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA21B29D218BF0A4002DB83F /* LHQStaticTableVC.m */; };
+		BA21B2A1218BF119002DB83F /* LHQWordItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA21B2A0218BF119002DB83F /* LHQWordItem.m */; };
+		BA21B2A4218BF2F9002DB83F /* LHQWordArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA21B2A3218BF2F9002DB83F /* LHQWordArrowItem.m */; };
+		BA21B2A7218BF364002DB83F /* LHQItemSection.m in Sources */ = {isa = PBXBuildFile; fileRef = BA21B2A6218BF364002DB83F /* LHQItemSection.m */; };
+		BA21B2AA218BF54F002DB83F /* LHQSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA21B2A9218BF54F002DB83F /* LHQSettingCell.m */; };
 		BA7F2C90218AA44900DBE4B7 /* LHQNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2C8F218AA44900DBE4B7 /* LHQNavigationBar.m */; };
 		BA7F2C96218ACABB00DBE4B7 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2C95218ACABB00DBE4B7 /* UIView+Frame.m */; };
 		BA7F2C9C218AD64400DBE4B7 /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7F2C99218AD64400DBE4B7 /* UIColor+Random.m */; };
@@ -56,6 +61,16 @@
 		81345AF9BDABDE5079C632B2 /* Pods-iOSLHQProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject.debug.xcconfig"; sourceTree = "<group>"; };
 		9348A350A515967F17BCC6AD /* Pods-iOSLHQProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProjectTests/Pods-iOSLHQProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C2B81B0CDC8293DB9824FA1 /* Pods-iOSLHQProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject.release.xcconfig"; sourceTree = "<group>"; };
+		BA21B29C218BF0A4002DB83F /* LHQStaticTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQStaticTableVC.h; sourceTree = "<group>"; };
+		BA21B29D218BF0A4002DB83F /* LHQStaticTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQStaticTableVC.m; sourceTree = "<group>"; };
+		BA21B29F218BF119002DB83F /* LHQWordItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQWordItem.h; sourceTree = "<group>"; };
+		BA21B2A0218BF119002DB83F /* LHQWordItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQWordItem.m; sourceTree = "<group>"; };
+		BA21B2A2218BF2F9002DB83F /* LHQWordArrowItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQWordArrowItem.h; sourceTree = "<group>"; };
+		BA21B2A3218BF2F9002DB83F /* LHQWordArrowItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQWordArrowItem.m; sourceTree = "<group>"; };
+		BA21B2A5218BF364002DB83F /* LHQItemSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQItemSection.h; sourceTree = "<group>"; };
+		BA21B2A6218BF364002DB83F /* LHQItemSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQItemSection.m; sourceTree = "<group>"; };
+		BA21B2A8218BF54F002DB83F /* LHQSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQSettingCell.h; sourceTree = "<group>"; };
+		BA21B2A9218BF54F002DB83F /* LHQSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQSettingCell.m; sourceTree = "<group>"; };
 		BA7F2C81218A9EED00DBE4B7 /* LHQiOSProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQiOSProject.pch; sourceTree = "<group>"; };
 		BA7F2C8E218AA44900DBE4B7 /* LHQNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQNavigationBar.h; sourceTree = "<group>"; };
 		BA7F2C8F218AA44900DBE4B7 /* LHQNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQNavigationBar.m; sourceTree = "<group>"; };
@@ -237,6 +252,8 @@
 				BA7F2CB9218AF8D100DBE4B7 /* LHQBaseViewVC.m */,
 				BA7F2CBB218AFA0100DBE4B7 /* LHQTableViewVC.h */,
 				BA7F2CBC218AFA0100DBE4B7 /* LHQTableViewVC.m */,
+				BA21B29C218BF0A4002DB83F /* LHQStaticTableVC.h */,
+				BA21B29D218BF0A4002DB83F /* LHQStaticTableVC.m */,
 			);
 			path = BaseControllers;
 			sourceTree = "<group>";
@@ -246,6 +263,8 @@
 			children = (
 				BA7F2C8E218AA44900DBE4B7 /* LHQNavigationBar.h */,
 				BA7F2C8F218AA44900DBE4B7 /* LHQNavigationBar.m */,
+				BA21B2A8218BF54F002DB83F /* LHQSettingCell.h */,
+				BA21B2A9218BF54F002DB83F /* LHQSettingCell.m */,
 			);
 			path = BaseViews;
 			sourceTree = "<group>";
@@ -253,6 +272,12 @@
 		BA7F2C8D218AA3F600DBE4B7 /* BaseModels */ = {
 			isa = PBXGroup;
 			children = (
+				BA21B29F218BF119002DB83F /* LHQWordItem.h */,
+				BA21B2A0218BF119002DB83F /* LHQWordItem.m */,
+				BA21B2A2218BF2F9002DB83F /* LHQWordArrowItem.h */,
+				BA21B2A3218BF2F9002DB83F /* LHQWordArrowItem.m */,
+				BA21B2A5218BF364002DB83F /* LHQItemSection.h */,
+				BA21B2A6218BF364002DB83F /* LHQItemSection.m */,
 			);
 			path = BaseModels;
 			sourceTree = "<group>";
@@ -615,7 +640,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA21B2A4218BF2F9002DB83F /* LHQWordArrowItem.m in Sources */,
 				BA7F2C9C218AD64400DBE4B7 /* UIColor+Random.m in Sources */,
+				BA21B2AA218BF54F002DB83F /* LHQSettingCell.m in Sources */,
+				BA21B2A1218BF119002DB83F /* LHQWordItem.m in Sources */,
 				BA7F2C96218ACABB00DBE4B7 /* UIView+Frame.m in Sources */,
 				BA7F2CBA218AF8D100DBE4B7 /* LHQBaseViewVC.m in Sources */,
 				BA7F2CA7218AD7FB00DBE4B7 /* LHQBaseRequest.m in Sources */,
@@ -626,10 +654,12 @@
 				BA7F2C90218AA44900DBE4B7 /* LHQNavigationBar.m in Sources */,
 				BA7F2CB7218AF49C00DBE4B7 /* LHQRequestBaseVC.m in Sources */,
 				BA7F2CBD218AFA0100DBE4B7 /* LHQTableViewVC.m in Sources */,
+				BA21B29E218BF0A4002DB83F /* LHQStaticTableVC.m in Sources */,
 				BA7F2CAE218ADF8200DBE4B7 /* LHQNavigationVC.m in Sources */,
 				BA7F2CA8218AD7FB00DBE4B7 /* LHQBaseResponse.m in Sources */,
 				BA94EEF92189B2F4006952FB /* LHQAppDelegate.m in Sources */,
 				BA7F2C9F218AD6AB00DBE4B7 /* MBProgressHUD+Extension.m in Sources */,
+				BA21B2A7218BF364002DB83F /* LHQItemSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
