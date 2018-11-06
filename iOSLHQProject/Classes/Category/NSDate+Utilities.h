@@ -106,4 +106,31 @@
 @property (readonly) NSInteger weekday;
 @property (readonly) NSInteger nthWeekday; // e.g. 2nd Tuesday of the month == 2
 @property (readonly) NSInteger year;
+
+
+///当前时间时间戳
++(NSInteger)getNowTimeInterval;
+
+///时间戳转字符串
++(NSString *)timeIntervalToString:(NSInteger)timeInterval;
+
+///字符串转时间戳
++(NSInteger)stringToTimeInterval:(NSString *)string;
+
+///字符串转NSDate
++(NSDate *)stringToDate:(NSString *)string;
+
+///NSDate转字符串
++(NSString *)dateToString:(NSDate *)date;
+
+///以前时间距离现在多久
++(NSString *)timeFromToNow:(NSInteger)formerTimeInterval;
+
+///将来时间距离现在多久
++(NSString *)willTimeToNow:(NSInteger)willTimeInterval;
+
+/// 今天、明天、后天的最晚时间戳
++(NSInteger)indexDayTimeInterval:(NSInteger)dayCount;
+
+
 @end

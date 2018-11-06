@@ -498,4 +498,145 @@ static const unsigned componentFlags = (NSYearCalendarUnit| NSMonthCalendarUnit 
 	NSDateComponents *components = [[NSDate currentCalendar] components:componentFlags fromDate:self];
 	return components.year;
 }
+
+#pragma mark 当前时间时间戳
++(NSInteger)getNowTimeInterval
+{
+    NSDate *date = [NSDate date];
+    NSInteger timeInterval = [date timeIntervalSince1970];
+    return timeInterval;
+}
+
+#pragma mark 时间戳转字符串
++(NSString *)timeIntervalToString:(NSInteger)timeInterval
+{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *string = [dateFormatter stringFromDate:date];
+    return string;
+}
+
+#pragma mark 字符串转时间戳
++(NSInteger)stringToTimeInterval:(NSString *)string
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *date = [dateFormatter dateFromString:string];
+    NSInteger timeInterval = [date timeIntervalSince1970];
+    return timeInterval;
+}
+
+#pragma mark 字符串转NSDate
++(NSDate *)stringToDate:(NSString *)string
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *date = [dateFormatter dateFromString:string];
+    return date;
+}
+
+#pragma mark NSDate转字符串
++(NSString *)dateToString:(NSDate *)date
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSString *string = [dateFormatter stringFromDate:date];
+    return string;
+}
+
+#pragma mark 以前时间距离现在多久
++(NSString *)timeFromToNow:(NSInteger)formerTimeInterval
+{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:formerTimeInterval];
+    
+    NSTimeInterval  timeInterval = [date timeIntervalSinceNow];
+    timeInterval = -timeInterval;
+    long temp = 0;
+    NSString *result;
+    if (timeInterval < 0) {//将来时间
+        result = [self willTimeToNow:formerTimeInterval];
+    }
+    else if (timeInterval < 60) {
+        result = [NSString stringWithFormat:@"刚刚"];
+    }
+    else if((temp = timeInterval/60) < 60){
+        result = [NSString stringWithFormat:@"%ld分钟前",temp];
+    }
+    else if((temp = temp/60) < 24){
+        result = [NSString stringWithFormat:@"%ld小时前",temp];
+    }
+    else if((temp = temp/24) < 30){
+        result = [NSString stringWithFormat:@"%ld天前",temp];
+    }
+    else if((temp = temp/30) < 12){
+        result = [NSString stringWithFormat:@"%ld个月前",temp];
+    }
+    else{
+        temp = temp/12;
+        result = [NSString stringWithFormat:@"%ld年前",temp];
+    }
+    return  result;
+}
+
+#pragma mark 将来时间距离现在多久
++(NSString *)willTimeToNow:(NSInteger)willTimeInterval
+{
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:willTimeInterval];
+    //方法一
+    //NSDate *willDate = [[NSDate date] laterDate:date];
+    //NSTimeInterval timeInterval = [willDate timeIntervalSinceNow];
+    //方法二
+    NSTimeInterval timeInterval = [date timeIntervalSinceDate:[NSDate date]];
+    
+    long temp = 0;
+    NSString *result;
+    if (timeInterval < 0) {//以前时间
+        result = [self timeFromToNow:willTimeInterval];
+    }
+    else if (timeInterval < 60) {
+        result = [NSString stringWithFormat:@"刚刚"];
+    }
+    else if((temp = timeInterval/60) < 60){
+        result = [NSString stringWithFormat:@"%ld分钟后",temp];
+    }
+    else if((temp = temp/60) < 24){
+        result = [NSString stringWithFormat:@"%ld小时后",temp];
+    }
+    else if((temp = temp/24) < 30){
+        result = [NSString stringWithFormat:@"%ld天后",temp];
+    }
+    else if((temp = temp/30) < 12){
+        result = [NSString stringWithFormat:@"%ld个月后",temp];
+    }
+    else{
+        temp = temp/12;
+        result = [NSString stringWithFormat:@"%ld年后",temp];
+    }
+    return  result;
+}
+
+#pragma mark 今天、明天、后天的最晚时间戳
++(NSInteger)indexDayTimeInterval:(NSInteger)dayCount
+{
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [calendar components:NSCalendarUnitWeekday | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:[NSDate date]];
+    [components setDay:([components day]+dayCount)];
+    //当前日期
+    NSDate *indexDate = [calendar dateFromComponents:components];
+    //日期转字符串
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *dayString = [dateFormatter stringFromDate:indexDate];
+    //字符串日期+一天最晚时间
+    NSString *end = [NSString stringWithFormat:@"%@ 23:59:59",dayString];
+    //字符串转时间戳
+    NSDateFormatter *endFormatter = [[NSDateFormatter alloc] init];
+    [endFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *endDate = [endFormatter dateFromString:end];
+    NSInteger endTimeInterval = [endDate timeIntervalSince1970];
+    return endTimeInterval;
+}
+
+
 @end
