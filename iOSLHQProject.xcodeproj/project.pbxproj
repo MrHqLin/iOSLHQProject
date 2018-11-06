@@ -39,6 +39,14 @@
 		BA94EF072189B2F8006952FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94EF062189B2F8006952FB /* main.m */; };
 		BA94EF112189B2F8006952FB /* iOSLHQProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94EF102189B2F8006952FB /* iOSLHQProjectTests.m */; };
 		BA94EF1C2189B2F8006952FB /* iOSLHQProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA94EF1B2189B2F8006952FB /* iOSLHQProjectUITests.m */; };
+		BAA1D0F12191254A005B7422 /* LHQRefreshCollectionViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1D0F02191254A005B7422 /* LHQRefreshCollectionViewVC.m */; };
+		BAA1D0F5219134B2005B7422 /* LHQTabBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1D0F4219134B2005B7422 /* LHQTabBarVC.m */; };
+		BAA1D0F821913512005B7422 /* LHQHomeViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1D0F721913512005B7422 /* LHQHomeViewVC.m */; };
+		BAA1D0FB21913537005B7422 /* LHQMessageViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1D0FA21913537005B7422 /* LHQMessageViewVC.m */; };
+		BAA1D0FE2191354F005B7422 /* LHQMeViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1D0FD2191354F005B7422 /* LHQMeViewVC.m */; };
+		BAA1D10121913CAE005B7422 /* LHQMainViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1D10021913CAE005B7422 /* LHQMainViewVC.m */; };
+		BAA1D10421914628005B7422 /* LHQLeftSlideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1D10321914628005B7422 /* LHQLeftSlideVC.m */; };
+		BAA1D10721919449005B7422 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA1D10621919449005B7422 /* NSDate+Utilities.m */; };
 		C1BFB8ADC4AC1EA558A49E35 /* libPods-iOSLHQProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 425E8D2EFE09A57C73A467D9 /* libPods-iOSLHQProjectTests.a */; };
 		E19308F8A9605E676FE5859D /* libPods-iOSLHQProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2BD98021FADACBB876D6B07 /* libPods-iOSLHQProjectUITests.a */; };
 		ECF76A93B5914666276A9361 /* libPods-iOSLHQProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B9A7FCB0EAC322478515E /* libPods-iOSLHQProject.a */; };
@@ -133,6 +141,22 @@
 		BA94EF172189B2F8006952FB /* iOSLHQProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSLHQProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA94EF1B2189B2F8006952FB /* iOSLHQProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSLHQProjectUITests.m; sourceTree = "<group>"; };
 		BA94EF1D2189B2F8006952FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA1D0EF2191254A005B7422 /* LHQRefreshCollectionViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQRefreshCollectionViewVC.h; sourceTree = "<group>"; };
+		BAA1D0F02191254A005B7422 /* LHQRefreshCollectionViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQRefreshCollectionViewVC.m; sourceTree = "<group>"; };
+		BAA1D0F3219134B2005B7422 /* LHQTabBarVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQTabBarVC.h; sourceTree = "<group>"; };
+		BAA1D0F4219134B2005B7422 /* LHQTabBarVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQTabBarVC.m; sourceTree = "<group>"; };
+		BAA1D0F621913512005B7422 /* LHQHomeViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQHomeViewVC.h; sourceTree = "<group>"; };
+		BAA1D0F721913512005B7422 /* LHQHomeViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQHomeViewVC.m; sourceTree = "<group>"; };
+		BAA1D0F921913537005B7422 /* LHQMessageViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQMessageViewVC.h; sourceTree = "<group>"; };
+		BAA1D0FA21913537005B7422 /* LHQMessageViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQMessageViewVC.m; sourceTree = "<group>"; };
+		BAA1D0FC2191354F005B7422 /* LHQMeViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQMeViewVC.h; sourceTree = "<group>"; };
+		BAA1D0FD2191354F005B7422 /* LHQMeViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQMeViewVC.m; sourceTree = "<group>"; };
+		BAA1D0FF21913CAE005B7422 /* LHQMainViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQMainViewVC.h; sourceTree = "<group>"; };
+		BAA1D10021913CAE005B7422 /* LHQMainViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQMainViewVC.m; sourceTree = "<group>"; };
+		BAA1D10221914628005B7422 /* LHQLeftSlideVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQLeftSlideVC.h; sourceTree = "<group>"; };
+		BAA1D10321914628005B7422 /* LHQLeftSlideVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQLeftSlideVC.m; sourceTree = "<group>"; };
+		BAA1D10521919449005B7422 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		BAA1D10621919449005B7422 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
 		DF4B9A7FCB0EAC322478515E /* libPods-iOSLHQProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLHQProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E31F5B047DC7808A1333BC75 /* Pods-iOSLHQProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProjectTests/Pods-iOSLHQProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		F2BD98021FADACBB876D6B07 /* libPods-iOSLHQProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLHQProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +210,7 @@
 				BA7F2C84218AA09800DBE4B7 /* Category */,
 				BA7F2C85218AA0A900DBE4B7 /* Helpers */,
 				BA7F2C86218AA0BE00DBE4B7 /* LHQBase */,
+				BAA1D0F221913438005B7422 /* LHQMain */,
 				BA7F2C87218AA33700DBE4B7 /* LHQControllers */,
 				BA7F2C88218AA34C00DBE4B7 /* LHQViews */,
 				BA7F2C89218AA37500DBE4B7 /* LHQModels */,
@@ -215,6 +240,8 @@
 				BA7F2C99218AD64400DBE4B7 /* UIColor+Random.m */,
 				BA7F2C9D218AD6AB00DBE4B7 /* MBProgressHUD+Extension.h */,
 				BA7F2C9E218AD6AB00DBE4B7 /* MBProgressHUD+Extension.m */,
+				BAA1D10521919449005B7422 /* NSDate+Utilities.h */,
+				BAA1D10621919449005B7422 /* NSDate+Utilities.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -239,6 +266,14 @@
 		BA7F2C87218AA33700DBE4B7 /* LHQControllers */ = {
 			isa = PBXGroup;
 			children = (
+				BAA1D10221914628005B7422 /* LHQLeftSlideVC.h */,
+				BAA1D10321914628005B7422 /* LHQLeftSlideVC.m */,
+				BAA1D0F621913512005B7422 /* LHQHomeViewVC.h */,
+				BAA1D0F721913512005B7422 /* LHQHomeViewVC.m */,
+				BAA1D0F921913537005B7422 /* LHQMessageViewVC.h */,
+				BAA1D0FA21913537005B7422 /* LHQMessageViewVC.m */,
+				BAA1D0FC2191354F005B7422 /* LHQMeViewVC.h */,
+				BAA1D0FD2191354F005B7422 /* LHQMeViewVC.m */,
 			);
 			path = LHQControllers;
 			sourceTree = "<group>";
@@ -279,6 +314,8 @@
 				BA65D669219036020046B132 /* LHQCollectionVC.m */,
 				BA65D66B21904B8F0046B132 /* LHQRefreshTableViewVC.h */,
 				BA65D66C21904B8F0046B132 /* LHQRefreshTableViewVC.m */,
+				BAA1D0EF2191254A005B7422 /* LHQRefreshCollectionViewVC.h */,
+				BAA1D0F02191254A005B7422 /* LHQRefreshCollectionViewVC.m */,
 			);
 			path = BaseControllers;
 			sourceTree = "<group>";
@@ -371,6 +408,17 @@
 				BA94EF1D2189B2F8006952FB /* Info.plist */,
 			);
 			path = iOSLHQProjectUITests;
+			sourceTree = "<group>";
+		};
+		BAA1D0F221913438005B7422 /* LHQMain */ = {
+			isa = PBXGroup;
+			children = (
+				BAA1D0F3219134B2005B7422 /* LHQTabBarVC.h */,
+				BAA1D0F4219134B2005B7422 /* LHQTabBarVC.m */,
+				BAA1D0FF21913CAE005B7422 /* LHQMainViewVC.h */,
+				BAA1D10021913CAE005B7422 /* LHQMainViewVC.m */,
+			);
+			path = LHQMain;
 			sourceTree = "<group>";
 		};
 		C307DB285480230252B8E274 /* Frameworks */ = {
@@ -690,10 +738,17 @@
 				BA65D67321904D6B0046B132 /* LHQAutoRefreshFooter.m in Sources */,
 				BA7F2CA6218AD7FB00DBE4B7 /* LHQRequestManager.m in Sources */,
 				BA7F2CB1218AE05900DBE4B7 /* LHQNavUIBaseVC.m in Sources */,
+				BAA1D0F12191254A005B7422 /* LHQRefreshCollectionViewVC.m in Sources */,
+				BAA1D0F5219134B2005B7422 /* LHQTabBarVC.m in Sources */,
+				BAA1D0FB21913537005B7422 /* LHQMessageViewVC.m in Sources */,
 				BA65D66121902B4B0046B132 /* LHQVerticalFlowLayout.m in Sources */,
+				BAA1D0FE2191354F005B7422 /* LHQMeViewVC.m in Sources */,
 				BA65D66D21904B8F0046B132 /* LHQRefreshTableViewVC.m in Sources */,
+				BAA1D10421914628005B7422 /* LHQLeftSlideVC.m in Sources */,
 				BA7F2C90218AA44900DBE4B7 /* LHQNavigationBar.m in Sources */,
+				BAA1D0F821913512005B7422 /* LHQHomeViewVC.m in Sources */,
 				BA65D66421902EF20046B132 /* LHQHorizontalFlowLayout.m in Sources */,
+				BAA1D10121913CAE005B7422 /* LHQMainViewVC.m in Sources */,
 				BA7F2CB7218AF49C00DBE4B7 /* LHQRequestBaseVC.m in Sources */,
 				BA7F2CBD218AFA0100DBE4B7 /* LHQTableViewVC.m in Sources */,
 				BA21B29E218BF0A4002DB83F /* LHQStaticTableVC.m in Sources */,
@@ -702,6 +757,7 @@
 				BA94EEF92189B2F4006952FB /* LHQAppDelegate.m in Sources */,
 				BA7F2C9F218AD6AB00DBE4B7 /* MBProgressHUD+Extension.m in Sources */,
 				BA21B2A7218BF364002DB83F /* LHQItemSection.m in Sources */,
+				BAA1D10721919449005B7422 /* NSDate+Utilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

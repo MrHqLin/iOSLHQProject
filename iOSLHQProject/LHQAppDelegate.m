@@ -8,6 +8,7 @@
 
 #import "LHQAppDelegate.h"
 
+
 @interface LHQAppDelegate ()
 
 @end
@@ -16,7 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];   //设置通用背景颜色
+    [self.window makeKeyAndVisible];
+    
+    LHQLeftSlideVC *leftVc = [[LHQLeftSlideVC alloc] init];
+    self.tabBarVc = [[LHQTabBarVC alloc]init];
+    self.mainVc = [[LHQMainViewVC alloc]initWithLeftView:leftVc andMainView:self.tabBarVc];
+    self.window.rootViewController = self.mainVc;
+    
+//    self.window.rootViewController = [[LHQTabBarVC alloc]init];
+    
     return YES;
 }
 

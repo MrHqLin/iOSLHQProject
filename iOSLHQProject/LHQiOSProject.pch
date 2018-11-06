@@ -13,6 +13,7 @@
 // category
 #import "UIView+Frame.h"
 #import "MBProgressHUD+Extension.h"
+#import "UIColor+Random.h"
 
 // helpers
 

@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupBaseTableViewUI];
 }
 
 - (void)setupBaseTableViewUI

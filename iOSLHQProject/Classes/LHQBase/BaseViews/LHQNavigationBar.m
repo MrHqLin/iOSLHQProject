@@ -243,7 +243,7 @@
         
         self.leftView = [self.lhqDataSource lhqNavigationBarLeftView:self];
         
-    }else{
+    }else if ([self.lhqDataSource respondsToSelector:@selector(lhqNavigationBarLeftButtonImage:navigationBar:)]){
         
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, kSmallTouchSizeHeight, kSmallTouchSizeHeight)];
         
@@ -263,7 +263,7 @@
         
         self.rightView = [self.lhqDataSource lhqNavigationBarRightView:self];
         
-    }else{
+    }else if ([self.lhqDataSource respondsToSelector:@selector(lhqNavigationBarRightButtonImage:navigationBar:)]){
         
         UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, kLeftRightViewSizeMinWidth, kSmallTouchSizeHeight)];
         

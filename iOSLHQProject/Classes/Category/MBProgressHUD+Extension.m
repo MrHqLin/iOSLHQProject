@@ -35,15 +35,21 @@
     if (view == nil) view = (UIView*)[UIApplication sharedApplication].delegate.window;
     // 快速显示一个提示信息
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-    hud.mode=MBProgressHUDModeText;
-    hud.label.text=message;
-    hud.label.font= [UIFont systemFontOfSize:15];
+    hud.mode = MBProgressHUDModeIndeterminate;
+    hud.label.text = message;
+    hud.label.font = [UIFont systemFontOfSize:15];
     // 隐藏时候从父控件中移除
     hud.removeFromSuperViewOnHide = YES;
+    hud.contentColor = [UIColor whiteColor];
     //代表需要蒙版效果
     
-    //    hud.dimBackground = YES;
+//        hud.dimBackground = YES;
     hud.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
+    
+    hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.backgroundColor = [UIColor blackColor];
+    hud.bezelView.alpha = 0.8f;
+   
     return hud;
 }
 
@@ -108,6 +114,12 @@
     // X秒之后再消失
     [hud hideAnimated:YES afterDelay:time];
     
+    hud.contentColor = [UIColor whiteColor];
+    
+    hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.backgroundColor = [UIColor blackColor];
+    hud.bezelView.alpha = 0.8f;
+    
 }
 
 + (void)showCustomIcon:(NSString *)iconName Title:(NSString *)title ToView:(UIView *)view
@@ -131,6 +143,12 @@
     
     // 3秒之后再消失
     [hud hideAnimated:YES afterDelay:1];
+    
+    hud.contentColor = [UIColor whiteColor];
+    
+    hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.backgroundColor = [UIColor blackColor];
+    hud.bezelView.alpha = 0.8f;
 }
 
 + (void)hideHUDForView:(UIView *)view
