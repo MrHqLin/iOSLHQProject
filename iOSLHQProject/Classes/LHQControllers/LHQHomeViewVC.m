@@ -10,6 +10,8 @@
 #import "LHQAppdelegate.h"
 #import "LHQMessageViewVC.h"
 #import "LHQMeViewVC.h"
+#import "LHQAudioViewController.h"
+
 @interface LHQHomeViewVC ()
 
 @end
@@ -19,9 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    LHQWordArrowItem *item01 = [LHQWordArrowItem itemWithTitle:@"item01" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
+    LHQWordArrowItem *item01 = [LHQWordArrowItem itemWithTitle:@"录音" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
         DLog(@"1");
-        [self.navigationController pushViewController:[[LHQMeViewVC alloc]init] animated:YES];
+        [self.navigationController pushViewController:[[LHQAudioViewController alloc]init] animated:YES];
     }];
     item01.destVc = [LHQMessageViewVC class];
     

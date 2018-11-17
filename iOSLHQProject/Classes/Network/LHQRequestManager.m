@@ -7,6 +7,7 @@
 //
 
 #import "LHQRequestManager.h"
+#import <AVFoundation/AVFoundation.h>
 
 
 @implementation LHQRequestManager
@@ -17,6 +18,7 @@
 - (void)POST:(NSString *)urlString parameters:(id)parameters completion:(void (^)(LHQBaseResponse *))completion
 {
     [self request:@"POST" URL:urlString parameters:parameters completion:completion];
+
 }
 
 //get
@@ -86,6 +88,8 @@ static NSString *jsonFileDirectory = @"LHQLocalJsons";
             [self wrapperTask:nil responseObject:responseObj error:jsonError completion:completion];
         }
     });
+    
+    
 }
 
 
@@ -147,7 +151,10 @@ static NSString *jsonFileDirectory = @"LHQLocalJsons";
 //  fileName 图片对应名字,一般服务不会使用,因为服务端会直接根据你上传的图片随机产生一个唯一的图片名字
 //  mimeType 资源类型
 //  不确定参数类型 可以这个 octet-stream 类型, 二进制流
-- (void)upload:(NSString *)urlString parameters:(id)parameters formDataBlock:(NSDictionary<NSData *, LHQDataName *> *(^)(id<AFMultipartFormData> formData, NSMutableDictionary<NSData *, LHQDataName *> *needFillDataDict))formDataBlock progress:(void (^)(NSProgress *progress))progress completion:(void (^)(LHQBaseResponse *response))completion
+- (void)upload:(NSString *)urlString parameters:(id)parameters
+ formDataBlock:(NSDictionary<NSData *, LHQDataName *> *(^)(id<AFMultipartFormData> formData, NSMutableDictionary<NSData *, LHQDataName *> *needFillDataDict))formDataBlock
+      progress:(void (^)(NSProgress *progress))progress
+    completion:(void (^)(LHQBaseResponse *response))completion
 {
     static NSString *mineType = @"application/octet-stream";
     
@@ -178,6 +185,7 @@ static NSString *jsonFileDirectory = @"LHQLocalJsons";
         [self wrapperTask:task responseObject:nil error:error completion:completion];
         
     }];
+
     
 }
 

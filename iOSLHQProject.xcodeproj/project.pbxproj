@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5E4AC8F21A02E1E006364ED /* LHQAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4AC8D21A02E1E006364ED /* LHQAudioViewController.m */; };
+		B5E4AC9021A02E1E006364ED /* LHQAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E4AC8E21A02E1E006364ED /* LHQAudioViewController.xib */; };
 		BA21B29E218BF0A4002DB83F /* LHQStaticTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA21B29D218BF0A4002DB83F /* LHQStaticTableVC.m */; };
 		BA21B2A1218BF119002DB83F /* LHQWordItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA21B2A0218BF119002DB83F /* LHQWordItem.m */; };
 		BA21B2A4218BF2F9002DB83F /* LHQWordArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA21B2A3218BF2F9002DB83F /* LHQWordArrowItem.m */; };
@@ -76,6 +78,9 @@
 		81345AF9BDABDE5079C632B2 /* Pods-iOSLHQProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject.debug.xcconfig"; sourceTree = "<group>"; };
 		9348A350A515967F17BCC6AD /* Pods-iOSLHQProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProjectTests/Pods-iOSLHQProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C2B81B0CDC8293DB9824FA1 /* Pods-iOSLHQProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject.release.xcconfig"; sourceTree = "<group>"; };
+		B5E4AC8C21A02E1E006364ED /* LHQAudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQAudioViewController.h; sourceTree = "<group>"; };
+		B5E4AC8D21A02E1E006364ED /* LHQAudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQAudioViewController.m; sourceTree = "<group>"; };
+		B5E4AC8E21A02E1E006364ED /* LHQAudioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LHQAudioViewController.xib; sourceTree = "<group>"; };
 		BA21B29C218BF0A4002DB83F /* LHQStaticTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQStaticTableVC.h; sourceTree = "<group>"; };
 		BA21B29D218BF0A4002DB83F /* LHQStaticTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQStaticTableVC.m; sourceTree = "<group>"; };
 		BA21B29F218BF119002DB83F /* LHQWordItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQWordItem.h; sourceTree = "<group>"; };
@@ -274,6 +279,9 @@
 				BAA1D0FA21913537005B7422 /* LHQMessageViewVC.m */,
 				BAA1D0FC2191354F005B7422 /* LHQMeViewVC.h */,
 				BAA1D0FD2191354F005B7422 /* LHQMeViewVC.m */,
+				B5E4AC8C21A02E1E006364ED /* LHQAudioViewController.h */,
+				B5E4AC8D21A02E1E006364ED /* LHQAudioViewController.m */,
+				B5E4AC8E21A02E1E006364ED /* LHQAudioViewController.xib */,
 			);
 			path = LHQControllers;
 			sourceTree = "<group>";
@@ -547,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA94EF042189B2F8006952FB /* LaunchScreen.storyboard in Resources */,
+				B5E4AC9021A02E1E006364ED /* LHQAudioViewController.xib in Resources */,
 				BA94EF012189B2F8006952FB /* Assets.xcassets in Resources */,
 				BA94EEFF2189B2F4006952FB /* Main.storyboard in Resources */,
 			);
@@ -732,6 +741,7 @@
 				BA7F2CBA218AF8D100DBE4B7 /* LHQBaseViewVC.m in Sources */,
 				BA65D66A219036020046B132 /* LHQCollectionVC.m in Sources */,
 				BA7F2CA7218AD7FB00DBE4B7 /* LHQBaseRequest.m in Sources */,
+				B5E4AC8F21A02E1E006364ED /* LHQAudioViewController.m in Sources */,
 				BA94EF072189B2F8006952FB /* main.m in Sources */,
 				BA65D667219033310046B132 /* LHQElementsFlowLayout.m in Sources */,
 				BA7F2CB4218AF0FE00DBE4B7 /* LHQTextViewVC.m in Sources */,

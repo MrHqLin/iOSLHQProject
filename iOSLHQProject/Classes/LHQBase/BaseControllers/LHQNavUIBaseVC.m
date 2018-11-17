@@ -76,6 +76,7 @@
     return [UIApplication sharedApplication].statusBarFrame.size.height + 44.0;
 }
 
+
 #pragma mark - Delegate
 /** 左边的按钮的点击 */
 -(void)leftButtonEvent:(UIButton *)sender navigationBar:(LHQNavigationBar *)navigationBar {
