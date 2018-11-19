@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LHQAudioViewController">
+            <connections>
+                <outlet property="finishBtn" destination="ekx-68-Dx5" id="vKj-RJ-RRG"/>
+                <outlet property="pauseBtn" destination="b0f-k7-qRH" id="Ien-bJ-OKJ"/>
+                <outlet property="progressView" destination="5nn-5Z-ZV3" id="chN-V5-gi6"/>
+                <outlet property="startBtn" destination="96Q-cg-pfr" id="ujs-Mu-zHn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5nn-5Z-ZV3">
+                    <rect key="frame" x="50" y="332.5" width="275" height="2"/>
+                </progressView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96Q-cg-pfr">
+                    <rect key="frame" x="50" y="374.5" width="80" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ObU-Do-cSh"/>
+                        <constraint firstAttribute="width" constant="80" id="ohb-2A-g0R"/>
+                    </constraints>
+                    <state key="normal" title="录音"/>
+                    <connections>
+                        <action selector="startTap:" destination="-1" eventType="touchUpInside" id="Ftb-mr-zPe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0f-k7-qRH">
+                    <rect key="frame" x="150" y="374.5" width="80" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="elL-Nv-ZLk"/>
+                        <constraint firstAttribute="height" constant="45" id="sqD-cU-utB"/>
+                    </constraints>
+                    <state key="normal" title="暂停"/>
+                    <connections>
+                        <action selector="pauseTap:" destination="-1" eventType="touchUpInside" id="a5n-bb-Yod"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekx-68-Dx5">
+                    <rect key="frame" x="260" y="374.5" width="80" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="YSH-ZM-p3b"/>
+                        <constraint firstAttribute="width" constant="80" id="ck8-RH-BEN"/>
+                    </constraints>
+                    <state key="normal" title="结束"/>
+                    <connections>
+                        <action selector="finishTap:" destination="-1" eventType="touchUpInside" id="DeD-Yj-ZZz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLh-DF-et5">
+                    <rect key="frame" x="100" y="515" width="175" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="转码base64再转音频播放"/>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="4Ju-Of-sGb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b0f-k7-qRH" firstAttribute="leading" secondItem="96Q-cg-pfr" secondAttribute="trailing" constant="20" id="0VM-1D-jQN"/>
+                <constraint firstItem="ekx-68-Dx5" firstAttribute="top" secondItem="5nn-5Z-ZV3" secondAttribute="bottom" constant="40" id="3aV-SH-cbf"/>
+                <constraint firstAttribute="trailing" secondItem="5nn-5Z-ZV3" secondAttribute="trailing" constant="50" id="3wh-jL-VIs"/>
+                <constraint firstItem="96Q-cg-pfr" firstAttribute="top" secondItem="5nn-5Z-ZV3" secondAttribute="bottom" constant="40" id="IPr-Fc-Ab3"/>
+                <constraint firstItem="b0f-k7-qRH" firstAttribute="top" secondItem="5nn-5Z-ZV3" secondAttribute="bottom" constant="40" id="PUa-S8-wEo"/>
+                <constraint firstItem="5nn-5Z-ZV3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="YrJ-xE-ZZF"/>
+                <constraint firstItem="ekx-68-Dx5" firstAttribute="leading" secondItem="b0f-k7-qRH" secondAttribute="trailing" constant="30" id="iJL-mH-I9X"/>
+                <constraint firstItem="5nn-5Z-ZV3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="iY9-h2-rxC"/>
+                <constraint firstItem="96Q-cg-pfr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="vvw-Uh-ziK"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
