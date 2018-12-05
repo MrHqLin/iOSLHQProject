@@ -27,6 +27,7 @@ pod 'MBProgressHUD'
 pod 'FDFullscreenPopGesture'
 pod 'YYCategories'
 pod 'IQKeyboardManager'
-
+pod 'FreeStreamer', '~> 3.8.2'
+pod 'FMDB'
 
 end

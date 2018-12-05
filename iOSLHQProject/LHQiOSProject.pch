@@ -26,6 +26,8 @@
 #import <AFNetworking.h>
 #import <Reachability.h>
 #import <MJRefresh.h>
+#import <FSAudioStream.h>
+#import <FMDB.h>
 
 #define LHQWeak(type)  __weak typeof(type) weak##type = type
 #define LHQKeyPath(obj, key) @(((void)obj.key, #key))

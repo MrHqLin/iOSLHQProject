@@ -198,6 +198,8 @@ static NSString *jsonFileDirectory = @"LHQLocalJsons";
     [acceptableContentTypes addObjectsFromArray:@[@"application/json", @"text/json", @"text/javascript", @"text/html", @"text/plain", @"application/xml", @"text/xml", @"*/*", @"application/x-plist"]];
     self.responseSerializer.acceptableContentTypes = [acceptableContentTypes copy];
     
+    
+    self.requestSerializer = [AFJSONRequestSerializer serializer];
     //记录网络状态
     [self.reachabilityManager startMonitoring];
     //自定义处理数据
@@ -205,7 +207,7 @@ static NSString *jsonFileDirectory = @"LHQLocalJsons";
         return response;
     };
 }
-
+/*
 - (void)setCerFilePath:(NSString *)cerFilePath {
     _cerFilePath = cerFilePath;
     if (LHQIsEmpty(cerFilePath)) {
@@ -233,23 +235,24 @@ static NSString *jsonFileDirectory = @"LHQLocalJsons";
 //    2.加上这个函数，https ssl 验证。
     [self setSecurityPolicy:securityPolicy];
 }
+ */
 
-#pragma mark - 处理返回序列化
-- (void)setResponseSerializer:(AFHTTPResponseSerializer<AFURLResponseSerialization> *)responseSerializer
-{
-    [super setResponseSerializer:responseSerializer];
-    
-    if ([responseSerializer isKindOfClass:[AFJSONResponseSerializer class]]) {
-        AFJSONResponseSerializer *JSONserializer = (AFJSONResponseSerializer *)responseSerializer;
-        JSONserializer.removesKeysWithNullValues = YES;
-        /*
-         NSJSONReadingMutableContainers = 转换出来的对象是可变数组或者可变字典
-         NSJSONReadingMutableLeaves = 转换呼出来的OC对象中的字符串是可变的\注意：iOS7之后无效 bug
-         NSJSONReadingAllowFragments = 如果服务器返回的JSON数据，不是标准的JSON，那么就必须使用这个值，否则无法解析
-         */
-        JSONserializer.readingOptions = NSJSONReadingMutableContainers;
-    }
-}
+//#pragma mark - 处理返回序列化
+//- (void)setResponseSerializer:(AFHTTPResponseSerializer<AFURLResponseSerialization> *)responseSerializer
+//{
+//    [super setResponseSerializer:responseSerializer];
+//
+//    if ([responseSerializer isKindOfClass:[AFJSONResponseSerializer class]]) {
+//        AFJSONResponseSerializer *JSONserializer = (AFJSONResponseSerializer *)responseSerializer;
+//        JSONserializer.removesKeysWithNullValues = YES;
+//        /*
+//         NSJSONReadingMutableContainers = 转换出来的对象是可变数组或者可变字典
+//         NSJSONReadingMutableLeaves = 转换呼出来的OC对象中的字符串是可变的\注意：iOS7之后无效 bug
+//         NSJSONReadingAllowFragments = 如果服务器返回的JSON数据，不是标准的JSON，那么就必须使用这个值，否则无法解析
+//         */
+//        JSONserializer.readingOptions = NSJSONReadingMutableContainers;
+//    }
+//}
 
 
 + (instancetype)manager {
