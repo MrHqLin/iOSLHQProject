@@ -14,6 +14,8 @@
 #import "LHQBaseRequest.h"
 #import "LHQFSAudioViewController.h"
 #import "LHQDataBaseViewController.h"
+#import "LHQSearchBarViewController.h"
+#import "LHQLottieViewController.h"
 
 @interface LHQHomeViewVC ()
 
@@ -33,6 +35,7 @@
     LHQWordArrowItem *item02 = [LHQWordArrowItem itemWithTitle:@"item02" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
         
     }];
+    item02.destVc = [LHQMeViewVC class];
     
     LHQWordArrowItem *item03 = [LHQWordArrowItem itemWithTitle:@"item03" subTitle:@""];
     item03.destVc = [LHQMeViewVC class];
@@ -40,14 +43,22 @@
     LHQWordArrowItem *item04 = [LHQWordArrowItem itemWithTitle:@"FSAudioStream" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
         [self.navigationController pushViewController:[[LHQFSAudioViewController alloc]init] animated:YES];
     }];
-    item03.destVc = [LHQFSAudioViewController class];
+    item04.destVc = [LHQFSAudioViewController class];
     
     LHQWordArrowItem *item05 = [LHQWordArrowItem itemWithTitle:@"数据库" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
         [self.navigationController pushViewController:[[LHQDataBaseViewController alloc]init] animated:YES];
     }];
-    item03.destVc = [LHQDataBaseViewController class];
+    item05.destVc = [LHQDataBaseViewController class];
     
-    LHQItemSection *section01 = [LHQItemSection sectionWithItems:@[item01,item02,item03,item04,item05] andHeaderTitle:@"" footerTitle:@"嘿嘿"];
+    LHQWordArrowItem *item06 = [LHQWordArrowItem itemWithTitle:@"searchBar" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
+        [self.navigationController pushViewController:[[LHQSearchBarViewController alloc]init] animated:YES];
+    }];
+    item06.destVc = [LHQSearchBarViewController class];
+    
+    LHQWordArrowItem *item07 = [LHQWordArrowItem itemWithTitle:@"lottie动画" subTitle:@""];
+    item07.destVc = [LHQLottieViewController class];
+    
+    LHQItemSection *section01 = [LHQItemSection sectionWithItems:@[item01,item02,item03,item04,item05,item06,item07] andHeaderTitle:@"" footerTitle:@"嘿嘿"];
     
     [self.sections addObject:section01];
     

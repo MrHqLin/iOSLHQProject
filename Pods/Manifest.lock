@@ -21,6 +21,7 @@ PODS:
   - FreeStreamer (3.8.3):
     - Reachability (~> 3.0)
   - IQKeyboardManager (6.2.0)
+  - lottie-ios (2.5.2)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJExtension (3.0.15.1)
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - FMDB
   - FreeStreamer (~> 3.8.2)
   - IQKeyboardManager
+  - lottie-ios
   - Masonry
   - MBProgressHUD
   - MJExtension
@@ -54,6 +56,7 @@ SPEC REPOS:
     - FMDB
     - FreeStreamer
     - IQKeyboardManager
+    - lottie-ios
     - Masonry
     - MBProgressHUD
     - MJExtension
@@ -68,6 +71,7 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   FreeStreamer: b205b0bf6a2e7855f935369145498f930eb27cac
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
@@ -76,6 +80,6 @@ SPEC CHECKSUMS:
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 2cef0f174865a7b76912fea272773418b3940a89
+PODFILE CHECKSUM: af77e8251bfe86bb8c3544e04a2cbe24c9720aed
 
 COCOAPODS: 1.5.3
