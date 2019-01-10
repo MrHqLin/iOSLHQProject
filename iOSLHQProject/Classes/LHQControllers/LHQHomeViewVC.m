@@ -16,6 +16,9 @@
 #import "LHQDataBaseViewController.h"
 #import "LHQSearchBarViewController.h"
 #import "LHQLottieViewController.h"
+#import "LHQCameraViewController.h"
+#import "LHQCarema2ViewController.h"
+#import "LHQImageTransformViewController.h"
 
 @interface LHQHomeViewVC ()
 
@@ -58,19 +61,27 @@
     LHQWordArrowItem *item07 = [LHQWordArrowItem itemWithTitle:@"lottie动画" subTitle:@""];
     item07.destVc = [LHQLottieViewController class];
     
-    LHQItemSection *section01 = [LHQItemSection sectionWithItems:@[item01,item02,item03,item04,item05,item06,item07] andHeaderTitle:@"" footerTitle:@"嘿嘿"];
+    LHQWordArrowItem *item08 = [LHQWordArrowItem itemWithTitle:@"自定义相机" subTitle:@""];
+    item08.destVc = [LHQCameraViewController class];
+    
+    LHQWordArrowItem *item09 = [LHQWordArrowItem itemWithTitle:@"自定义相机的封装" subTitle:@""];
+    item09.destVc = [LHQCarema2ViewController class];
+    
+    LHQWordArrowItem *item10 = [LHQWordArrowItem itemWithTitle:@"图片的自由变换" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
+        LHQImageTransformViewController *transformVc = [[LHQImageTransformViewController alloc]init];
+        transformVc.image = [UIImage imageNamed:@"IMG_0152.JPG"];
+        [self.navigationController pushViewController:transformVc animated:YES];
+    }];
+    item10.destVc = [LHQImageTransformViewController class];
+    
+    LHQItemSection *section01 = [LHQItemSection sectionWithItems:@[item01,item02,item03,item04,
+                                                                   item05,item06,item07,item08,
+                                                                   item09,item10] andHeaderTitle:@"" footerTitle:@"嘿嘿"];
     
     [self.sections addObject:section01];
     
     [MBProgressHUD showSuccess:@"成功" ToView:self.view];
     
-    NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
-    [params setValue:@"d5a6697acabd46efa35fa06f0052626d" forKey:@"id"];
-    
-    LHQBaseRequest *request = [[LHQBaseRequest alloc]init];
-    [request POST:@"http://39.106.54.209:8080/BookIngo/TabHb_findbyid.action" parameters:params completion:^(LHQBaseResponse *response) {
-        
-    }];
     
 }
 

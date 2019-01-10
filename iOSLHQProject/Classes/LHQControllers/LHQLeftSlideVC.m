@@ -45,6 +45,7 @@
     LHQItemSection *section01 = [LHQItemSection sectionWithItems:@[item01,item02,item03] andHeaderTitle:@"" footerTitle:@"嘿嘿"];
     
     [self.sections addObject:section01];
+    
 }
 
 

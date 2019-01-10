@@ -35,8 +35,13 @@
     NSURL *url = [NSURL URLWithString:urlStr];
     [_audioStream playFromURL:url];
     
+    
+    
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 
 @end

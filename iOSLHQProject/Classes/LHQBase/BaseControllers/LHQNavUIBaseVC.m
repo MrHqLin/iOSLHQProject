@@ -76,10 +76,17 @@
     return [UIApplication sharedApplication].statusBarFrame.size.height + 44.0;
 }
 
+- (UIImage *)lhqNavigationBarLeftButtonImage:(UIButton *)leftButton navigationBar:(LHQNavigationBar *)navigationBar{
+    [leftButton setTitle:@"返回" forState:UIControlStateNormal];
+    [leftButton setTitleColor:[UIColor RandomColor] forState:UIControlStateNormal];
+    return nil;
+}
 
-#pragma mark - Delegate
+#pragma mark -- Delegate
 /** 左边的按钮的点击 */
 -(void)leftButtonEvent:(UIButton *)sender navigationBar:(LHQNavigationBar *)navigationBar {
+    // 默认pop
+    [self.navigationController popViewControllerAnimated:YES];
     NSLog(@"%s", __func__);
 }
 /** 右边的按钮的点击 */
@@ -91,7 +98,7 @@
     NSLog(@"%s", __func__);
 }
 
-#pragma mark - custom
+#pragma mark -- custom
 
 - (NSMutableAttributedString *)changeTitle:(NSString *)curTitle
 {

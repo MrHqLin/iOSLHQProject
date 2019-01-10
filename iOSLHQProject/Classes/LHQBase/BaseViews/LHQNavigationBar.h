@@ -16,27 +16,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
-// title
+// 导航标题
 - (NSMutableAttributedString *)lhqNavigationBarTitle:(LHQNavigationBar *)navigationBar;
-// background image
+// 导航背景
 - (UIImage *)lhqNavigationBarBackgroundImage:(LHQNavigationBar *)navigationBar;
-// bottom black line
+// 是否显示导航栏下黑线
 - (BOOL)lhqNavigationBarIsHideBottomLine:(LHQNavigationBar *)navigationBar;
-// bar height
+// 导航栏高度
 - (CGFloat)lhqNavigationBarHeight:(LHQNavigationBar *)navigationBar;
-// bar background color
+// 导航栏颜色
 - (UIColor *)lhqNavigationBarBackgroundColor:(LHQNavigationBar *)navigationBar;
 
-
-// left view
+// 导航栏左边视图
 - (UIView *)lhqNavigationBarLeftView:(LHQNavigationBar *)navigationBar;
-// right view
+// 导航栏右边视图
 - (UIView *)lhqNavigationBarRightView:(LHQNavigationBar *)navigationBar;
-// Title view
+// 导航栏中间视图
 - (UIView *)lhqNavigationBarTitleView:(LHQNavigationBar *)navigationBar;
-// left button
+// 导航栏左边按钮图
 - (UIImage *)lhqNavigationBarLeftButtonImage:(UIButton *)leftButton navigationBar:(LHQNavigationBar *)navigationBar;
-// right button
+// 导航栏右边按钮图
 - (UIImage *)lhqNavigationBarRightButtonImage:(UIButton *)rightButton navigationBar:(LHQNavigationBar *)naviagtionBar;
 
 

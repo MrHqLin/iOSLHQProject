@@ -16,6 +16,7 @@
 #import "UIColor+Random.h"
 
 // helpers
+#import "LHQAddition.h"
 
 // libs
 #import <YYCategories.h>
