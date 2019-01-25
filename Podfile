@@ -30,5 +30,6 @@ pod 'IQKeyboardManager'
 pod 'FreeStreamer', '~> 3.8.2'
 pod 'FMDB'
 pod 'lottie-ios'
+pod "MOFSPickerManager"
 
 end

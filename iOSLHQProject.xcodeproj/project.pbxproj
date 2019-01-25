@@ -41,6 +41,9 @@
 		3E31A18B21CA18B3004453D4 /* paopao.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E31A18621CA18B3004453D4 /* paopao.json */; };
 		3E3C096021BA06EE00CE823D /* LHQSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C095E21BA06EE00CE823D /* LHQSearchBar.m */; };
 		3E3C096321BA078100CE823D /* LHQSearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C096221BA078100CE823D /* LHQSearchBarViewController.m */; };
+		3E572E7521FAA2AA0083D21D /* LHQVioceBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E572E7221FAA2A90083D21D /* LHQVioceBackViewController.xib */; };
+		3E572E7621FAA2AA0083D21D /* LHQVioceBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E572E7421FAA2A90083D21D /* LHQVioceBackViewController.m */; };
+		3E572E7921FAABED0083D21D /* LHQFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E572E7821FAABED0083D21D /* LHQFormViewController.m */; };
 		3ECE5F1021E74B7300D1C2BD /* UIButton+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE5F0F21E74B7300D1C2BD /* UIButton+Addition.m */; };
 		3ECE5F1521E74F9600D1C2BD /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE5F1421E74F9600D1C2BD /* UILabel+Addition.m */; };
 		3ECE5F1E21E7535D00D1C2BD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE5F1D21E7535D00D1C2BD /* NSString+Extension.m */; };
@@ -167,6 +170,11 @@
 		3E3C095F21BA06EE00CE823D /* LHQSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQSearchBar.h; sourceTree = "<group>"; };
 		3E3C096121BA078100CE823D /* LHQSearchBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQSearchBarViewController.h; sourceTree = "<group>"; };
 		3E3C096221BA078100CE823D /* LHQSearchBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQSearchBarViewController.m; sourceTree = "<group>"; };
+		3E572E7221FAA2A90083D21D /* LHQVioceBackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHQVioceBackViewController.xib; sourceTree = "<group>"; };
+		3E572E7321FAA2A90083D21D /* LHQVioceBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQVioceBackViewController.h; sourceTree = "<group>"; };
+		3E572E7421FAA2A90083D21D /* LHQVioceBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQVioceBackViewController.m; sourceTree = "<group>"; };
+		3E572E7721FAABED0083D21D /* LHQFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQFormViewController.h; sourceTree = "<group>"; };
+		3E572E7821FAABED0083D21D /* LHQFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQFormViewController.m; sourceTree = "<group>"; };
 		3ECE5F0E21E74B7300D1C2BD /* UIButton+Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addition.h"; sourceTree = "<group>"; };
 		3ECE5F0F21E74B7300D1C2BD /* UIButton+Addition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addition.m"; sourceTree = "<group>"; };
 		3ECE5F1321E74F9600D1C2BD /* UILabel+Addition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
@@ -555,6 +563,11 @@
 				3E22AD1721D470620019EC13 /* LHQCarema2ViewController.m */,
 				3E1BD66821DF362600BFB9D8 /* LHQImageTransformViewController.h */,
 				3E1BD66921DF362600BFB9D8 /* LHQImageTransformViewController.m */,
+				3E572E7321FAA2A90083D21D /* LHQVioceBackViewController.h */,
+				3E572E7421FAA2A90083D21D /* LHQVioceBackViewController.m */,
+				3E572E7221FAA2A90083D21D /* LHQVioceBackViewController.xib */,
+				3E572E7721FAABED0083D21D /* LHQFormViewController.h */,
+				3E572E7821FAABED0083D21D /* LHQFormViewController.m */,
 			);
 			path = LHQControllers;
 			sourceTree = "<group>";
@@ -827,6 +840,7 @@
 				B5E4AC9021A02E1E006364ED /* LHQAudioViewController.xib in Resources */,
 				3E31A17721CA13E5004453D4 /* img_0.png in Resources */,
 				3E31A17621CA13E5004453D4 /* haima.json in Resources */,
+				3E572E7521FAA2AA0083D21D /* LHQVioceBackViewController.xib in Resources */,
 				3E31A18B21CA18B3004453D4 /* paopao.json in Resources */,
 				BA94EF012189B2F8006952FB /* Assets.xcassets in Resources */,
 				3E31A18A21CA18B3004453D4 /* paopaoImg_3.png in Resources */,
@@ -879,11 +893,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/MOFSPickerManager/MOFSPickerManagerDemo/MOFSPickerManager/province_data.xml",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/province_data.xml",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -979,8 +995,10 @@
 				BA65D66421902EF20046B132 /* LHQHorizontalFlowLayout.m in Sources */,
 				BAA1D10121913CAE005B7422 /* LHQMainViewVC.m in Sources */,
 				BA7F2CB7218AF49C00DBE4B7 /* LHQRequestBaseVC.m in Sources */,
+				3E572E7921FAABED0083D21D /* LHQFormViewController.m in Sources */,
 				BA7F2CBD218AFA0100DBE4B7 /* LHQTableViewVC.m in Sources */,
 				3E2E900021D3790700AD3D24 /* LHQMaskingView.m in Sources */,
+				3E572E7621FAA2AA0083D21D /* LHQVioceBackViewController.m in Sources */,
 				3E1BD67021DF4A9500BFB9D8 /* UIImage+Extension.m in Sources */,
 				3E22AD1B21D471D20019EC13 /* LHQCameraTool.m in Sources */,
 				3E19791821B7B99600B798EB /* LHQTimer.m in Sources */,

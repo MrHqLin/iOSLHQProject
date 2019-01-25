@@ -7,9 +7,13 @@
 //
 
 #import "LHQAppDelegate.h"
-
+#import <MediaPlayer/MediaPlayer.h>
+#import "LHQAudioPlayer.h"
 
 @interface LHQAppDelegate ()
+{
+    UIBackgroundTaskIdentifier _bgTaskId;
+}
 
 @end
 
@@ -34,8 +38,52 @@
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    //开启后台处理多媒体事件
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    AVAudioSession *session=[AVAudioSession sharedInstance];
+    [session setActive:YES error:nil];
+    //后台播放
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    //这样做，可以在按home键进入后台后 ，播放一段时间，几分钟吧。但是不能持续播放网络歌曲，若需要持续播放网络歌曲，还需要申请后台任务id，具体做法是：
+    _bgTaskId = [LHQAppDelegate backgroundPlayerID:_bgTaskId];
+    //其中的_bgTaskId是后台任务UIBackgroundTaskIdentifier _bgTaskId;
+}
+
++ (UIBackgroundTaskIdentifier)backgroundPlayerID:(UIBackgroundTaskIdentifier)backTaskId {
+    //设置并激活音频会话类别
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [session setActive:YES error:nil];
+    //允许应用程序接收远程控制
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    //设置后台任务ID
+    UIBackgroundTaskIdentifier newTaskId = UIBackgroundTaskInvalid;
+    newTaskId = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:nil];
+    if(newTaskId != UIBackgroundTaskInvalid && backTaskId != UIBackgroundTaskInvalid) {
+        [[UIApplication sharedApplication] endBackgroundTask:backTaskId];
+    }
+    return newTaskId;
+}
+
+// 后台音乐播放控制
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event{
+    switch (event.subtype) {
+        case UIEventSubtypeRemoteControlPlay:
+            DLog(@"play");
+            break;
+        case UIEventSubtypeRemoteControlPause:
+            DLog(@"pause");
+            [kPlayer stop];
+            break;
+        case UIEventSubtypeRemoteControlNextTrack:
+            DLog(@"next");
+            break;
+        case UIEventSubtypeRemoteControlPreviousTrack:
+            DLog(@"previous");;
+            break;
+        default:
+            break;
+    }
 }
 
 

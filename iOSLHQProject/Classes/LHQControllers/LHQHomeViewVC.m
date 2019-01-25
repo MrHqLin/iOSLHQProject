@@ -19,6 +19,8 @@
 #import "LHQCameraViewController.h"
 #import "LHQCarema2ViewController.h"
 #import "LHQImageTransformViewController.h"
+#import "LHQVioceBackViewController.h"
+#import "LHQFormViewController.h"
 
 @interface LHQHomeViewVC ()
 
@@ -35,10 +37,10 @@
     }];
     item01.destVc = [LHQMessageViewVC class];
     
-    LHQWordArrowItem *item02 = [LHQWordArrowItem itemWithTitle:@"item02" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
-        
+    LHQWordArrowItem *item02 = [LHQWordArrowItem itemWithTitle:@"表单填写" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
+        [self.navigationController pushViewController:[[LHQFormViewController alloc]init] animated:YES];
     }];
-    item02.destVc = [LHQMeViewVC class];
+    item02.destVc = [LHQFormViewController class];
     
     LHQWordArrowItem *item03 = [LHQWordArrowItem itemWithTitle:@"item03" subTitle:@""];
     item03.destVc = [LHQMeViewVC class];
@@ -74,9 +76,12 @@
     }];
     item10.destVc = [LHQImageTransformViewController class];
     
+    LHQWordArrowItem *item11 = [LHQWordArrowItem itemWithTitle:@"音乐后台播放锁屏设置" subTitle:@""];
+    item11.destVc = [LHQVioceBackViewController class];
+    
     LHQItemSection *section01 = [LHQItemSection sectionWithItems:@[item01,item02,item03,item04,
                                                                    item05,item06,item07,item08,
-                                                                   item09,item10] andHeaderTitle:@"" footerTitle:@"嘿嘿"];
+                                                                   item09,item10,item11] andHeaderTitle:@"" footerTitle:@"嘿嘿"];
     
     [self.sections addObject:section01];
     

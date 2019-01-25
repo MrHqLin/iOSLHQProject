@@ -28,7 +28,7 @@ typedef NS_ENUM(NSUInteger, LHQAudioBufferState) {
     LHQAudioBufferStateFinished
 };
 
-#define kPlayer [lhqAudioPlayer sharedInstance]
+#define kPlayer [LHQAudioPlayer sharedInstance]
 
 @class LHQAudioPlayer;
 
