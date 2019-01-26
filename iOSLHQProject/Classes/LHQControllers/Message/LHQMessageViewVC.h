@@ -7,11 +7,9 @@
 //
 
 #import "LHQTableViewVC.h"
+#import "LHQStaticTableVC.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface LHQMessageViewVC : LHQTableViewVC
+@interface LHQMessageViewVC : LHQStaticTableVC
 
 @end
 
-NS_ASSUME_NONNULL_END

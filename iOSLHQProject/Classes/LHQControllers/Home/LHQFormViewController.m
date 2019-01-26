@@ -147,6 +147,11 @@
     NSLog(@"%@", current);
     NSLog(@"%@", string);
     
+    // 字符限制为8位
+    if (current.length > 8) {
+        return NO;
+    }
+    
     LHQWordItem *item = self.sections.firstObject.items[textField.tag - 100];
     item.subTitle = current;
     
