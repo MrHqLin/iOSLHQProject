@@ -30,6 +30,7 @@
 #import <FSAudioStream.h>
 #import <FMDB.h>
 #import <AVFoundation/AVFoundation.h>
+#import <POP.h>
 
 #define LHQWeak(type)  __weak typeof(type) weak##type = type
 #define LHQKeyPath(obj, key) @(((void)obj.key, #key))

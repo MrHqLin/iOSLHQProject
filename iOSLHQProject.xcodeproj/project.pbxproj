@@ -48,6 +48,28 @@
 		3ECE5F1021E74B7300D1C2BD /* UIButton+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE5F0F21E74B7300D1C2BD /* UIButton+Addition.m */; };
 		3ECE5F1521E74F9600D1C2BD /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE5F1421E74F9600D1C2BD /* UILabel+Addition.m */; };
 		3ECE5F1E21E7535D00D1C2BD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECE5F1D21E7535D00D1C2BD /* NSString+Extension.m */; };
+		3EF48FEC22706866003578F3 /* LHQAsyncLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF48FEB22706866003578F3 /* LHQAsyncLayerCell.m */; };
+		3EF4902422706CCD003578F3 /* LHQCycleDemo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4901122706CCD003578F3 /* LHQCycleDemo2ViewController.m */; };
+		3EF4902522706CCD003578F3 /* LHQGroupDemo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4901322706CCD003578F3 /* LHQGroupDemo1ViewController.m */; };
+		3EF4902622706CCD003578F3 /* LHQPOPBasicAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4901522706CCD003578F3 /* LHQPOPBasicAnimationViewController.m */; };
+		3EF4902722706CCD003578F3 /* LHQPOPCustomAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4901722706CCD003578F3 /* LHQPOPCustomAnimationViewController.m */; };
+		3EF4902822706CCD003578F3 /* LHQPOPDecayAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4901922706CCD003578F3 /* LHQPOPDecayAnimationViewController.m */; };
+		3EF4902922706CCD003578F3 /* LHQPOPGroupAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4901B22706CCD003578F3 /* LHQPOPGroupAnimationViewController.m */; };
+		3EF4902A22706CCD003578F3 /* LHQPOPSpringAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4901D22706CCD003578F3 /* LHQPOPSpringAnimationViewController.m */; };
+		3EF4902B22706CCD003578F3 /* LHQPOPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4901F22706CCD003578F3 /* LHQPOPViewController.m */; };
+		3EF4902C22706CCD003578F3 /* LHQTickDemo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4902122706CCD003578F3 /* LHQTickDemo3ViewController.m */; };
+		3EF4902D22706CCD003578F3 /* LHQAsyncLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4902322706CCD003578F3 /* LHQAsyncLayerViewController.m */; };
+		3EF4903422706D56003578F3 /* LHQFFmpegHelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4902E22706D55003578F3 /* LHQFFmpegHelloWorldViewController.m */; };
+		3EF4903522706D56003578F3 /* LHQFFmpegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF4903022706D55003578F3 /* LHQFFmpegViewController.xib */; };
+		3EF4903622706D56003578F3 /* LHQFFmpegHelloWorldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EF4903122706D55003578F3 /* LHQFFmpegHelloWorldViewController.xib */; };
+		3EF4903722706D56003578F3 /* LHQFFmpegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4903322706D56003578F3 /* LHQFFmpegViewController.m */; };
+		3EF4903C22706D70003578F3 /* LHQPullMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4903822706D70003578F3 /* LHQPullMenuViewController.m */; };
+		3EF4903D22706D70003578F3 /* LHQDropMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4903A22706D70003578F3 /* LHQDropMenuViewController.m */; };
+		3EF4904722706D91003578F3 /* TFDropDownMenuCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4904122706D91003578F3 /* TFDropDownMenuCollectionViewCell.m */; };
+		3EF4904822706D91003578F3 /* TFDropDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4904322706D91003578F3 /* TFDropDownMenuView.m */; };
+		3EF4904922706D91003578F3 /* TFIndexPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4904522706D91003578F3 /* TFIndexPatch.m */; };
+		3EF4905A22706DE0003578F3 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4905622706DE0003578F3 /* YYFPSLabel.m */; };
+		3EF4905B22706DE0003578F3 /* LHQEasyBlankPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF4905922706DE0003578F3 /* LHQEasyBlankPageView.m */; };
 		B5E4AC8F21A02E1E006364ED /* LHQAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E4AC8D21A02E1E006364ED /* LHQAudioViewController.m */; };
 		B5E4AC9021A02E1E006364ED /* LHQAudioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E4AC8E21A02E1E006364ED /* LHQAudioViewController.xib */; };
 		BA21B29E218BF0A4002DB83F /* LHQStaticTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BA21B29D218BF0A4002DB83F /* LHQStaticTableVC.m */; };
@@ -185,6 +207,50 @@
 		3ECE5F1821E7517400D1C2BD /* LHQAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQAddition.h; sourceTree = "<group>"; };
 		3ECE5F1C21E7535D00D1C2BD /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		3ECE5F1D21E7535D00D1C2BD /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		3EF48FEA22706866003578F3 /* LHQAsyncLayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQAsyncLayerCell.h; sourceTree = "<group>"; };
+		3EF48FEB22706866003578F3 /* LHQAsyncLayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQAsyncLayerCell.m; sourceTree = "<group>"; };
+		3EF4901022706CCD003578F3 /* LHQCycleDemo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQCycleDemo2ViewController.h; sourceTree = "<group>"; };
+		3EF4901122706CCD003578F3 /* LHQCycleDemo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQCycleDemo2ViewController.m; sourceTree = "<group>"; };
+		3EF4901222706CCD003578F3 /* LHQGroupDemo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQGroupDemo1ViewController.h; sourceTree = "<group>"; };
+		3EF4901322706CCD003578F3 /* LHQGroupDemo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQGroupDemo1ViewController.m; sourceTree = "<group>"; };
+		3EF4901422706CCD003578F3 /* LHQPOPBasicAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQPOPBasicAnimationViewController.h; sourceTree = "<group>"; };
+		3EF4901522706CCD003578F3 /* LHQPOPBasicAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQPOPBasicAnimationViewController.m; sourceTree = "<group>"; };
+		3EF4901622706CCD003578F3 /* LHQPOPCustomAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQPOPCustomAnimationViewController.h; sourceTree = "<group>"; };
+		3EF4901722706CCD003578F3 /* LHQPOPCustomAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQPOPCustomAnimationViewController.m; sourceTree = "<group>"; };
+		3EF4901822706CCD003578F3 /* LHQPOPDecayAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQPOPDecayAnimationViewController.h; sourceTree = "<group>"; };
+		3EF4901922706CCD003578F3 /* LHQPOPDecayAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQPOPDecayAnimationViewController.m; sourceTree = "<group>"; };
+		3EF4901A22706CCD003578F3 /* LHQPOPGroupAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQPOPGroupAnimationViewController.h; sourceTree = "<group>"; };
+		3EF4901B22706CCD003578F3 /* LHQPOPGroupAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQPOPGroupAnimationViewController.m; sourceTree = "<group>"; };
+		3EF4901C22706CCD003578F3 /* LHQPOPSpringAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQPOPSpringAnimationViewController.h; sourceTree = "<group>"; };
+		3EF4901D22706CCD003578F3 /* LHQPOPSpringAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQPOPSpringAnimationViewController.m; sourceTree = "<group>"; };
+		3EF4901E22706CCD003578F3 /* LHQPOPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQPOPViewController.h; sourceTree = "<group>"; };
+		3EF4901F22706CCD003578F3 /* LHQPOPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQPOPViewController.m; sourceTree = "<group>"; };
+		3EF4902022706CCD003578F3 /* LHQTickDemo3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQTickDemo3ViewController.h; sourceTree = "<group>"; };
+		3EF4902122706CCD003578F3 /* LHQTickDemo3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQTickDemo3ViewController.m; sourceTree = "<group>"; };
+		3EF4902222706CCD003578F3 /* LHQAsyncLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQAsyncLayerViewController.h; sourceTree = "<group>"; };
+		3EF4902322706CCD003578F3 /* LHQAsyncLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQAsyncLayerViewController.m; sourceTree = "<group>"; };
+		3EF4902E22706D55003578F3 /* LHQFFmpegHelloWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQFFmpegHelloWorldViewController.m; sourceTree = "<group>"; };
+		3EF4902F22706D55003578F3 /* LHQFFmpegHelloWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQFFmpegHelloWorldViewController.h; sourceTree = "<group>"; };
+		3EF4903022706D55003578F3 /* LHQFFmpegViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHQFFmpegViewController.xib; sourceTree = "<group>"; };
+		3EF4903122706D55003578F3 /* LHQFFmpegHelloWorldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHQFFmpegHelloWorldViewController.xib; sourceTree = "<group>"; };
+		3EF4903222706D56003578F3 /* LHQFFmpegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQFFmpegViewController.h; sourceTree = "<group>"; };
+		3EF4903322706D56003578F3 /* LHQFFmpegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQFFmpegViewController.m; sourceTree = "<group>"; };
+		3EF4903822706D70003578F3 /* LHQPullMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQPullMenuViewController.m; sourceTree = "<group>"; };
+		3EF4903922706D70003578F3 /* LHQPullMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQPullMenuViewController.h; sourceTree = "<group>"; };
+		3EF4903A22706D70003578F3 /* LHQDropMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQDropMenuViewController.m; sourceTree = "<group>"; };
+		3EF4903B22706D70003578F3 /* LHQDropMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQDropMenuViewController.h; sourceTree = "<group>"; };
+		3EF4903F22706D91003578F3 /* TFDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDropDownMenu.h; sourceTree = "<group>"; };
+		3EF4904022706D91003578F3 /* TFDropDownMenuCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDropDownMenuCollectionViewCell.h; sourceTree = "<group>"; };
+		3EF4904122706D91003578F3 /* TFDropDownMenuCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDropDownMenuCollectionViewCell.m; sourceTree = "<group>"; };
+		3EF4904222706D91003578F3 /* TFDropDownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDropDownMenuView.h; sourceTree = "<group>"; };
+		3EF4904322706D91003578F3 /* TFDropDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDropDownMenuView.m; sourceTree = "<group>"; };
+		3EF4904422706D91003578F3 /* TFIndexPatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFIndexPatch.h; sourceTree = "<group>"; };
+		3EF4904522706D91003578F3 /* TFIndexPatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFIndexPatch.m; sourceTree = "<group>"; };
+		3EF4904622706D91003578F3 /* TFMenuDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMenuDefinition.h; sourceTree = "<group>"; };
+		3EF4905522706DE0003578F3 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		3EF4905622706DE0003578F3 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		3EF4905822706DE0003578F3 /* LHQEasyBlankPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQEasyBlankPageView.h; sourceTree = "<group>"; };
+		3EF4905922706DE0003578F3 /* LHQEasyBlankPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQEasyBlankPageView.m; sourceTree = "<group>"; };
 		425E8D2EFE09A57C73A467D9 /* libPods-iOSLHQProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSLHQProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81345AF9BDABDE5079C632B2 /* Pods-iOSLHQProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProject/Pods-iOSLHQProject.debug.xcconfig"; sourceTree = "<group>"; };
 		9348A350A515967F17BCC6AD /* Pods-iOSLHQProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSLHQProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSLHQProjectTests/Pods-iOSLHQProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -323,6 +389,7 @@
 		3E19791221B7B91D00B798EB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				3EF4903E22706D91003578F3 /* DropDownMenu */,
 				3E31A16721CA13E5004453D4 /* joson */,
 				3E19792E21B7D65300B798EB /* DatabaseManager */,
 				3E19792121B7BCF600B798EB /* Audio */,
@@ -393,6 +460,12 @@
 				3E572E7221FAA2A90083D21D /* LHQVioceBackViewController.xib */,
 				3E572E7721FAABED0083D21D /* LHQFormViewController.h */,
 				3E572E7821FAABED0083D21D /* LHQFormViewController.m */,
+				3EF4902F22706D55003578F3 /* LHQFFmpegHelloWorldViewController.h */,
+				3EF4902E22706D55003578F3 /* LHQFFmpegHelloWorldViewController.m */,
+				3EF4903122706D55003578F3 /* LHQFFmpegHelloWorldViewController.xib */,
+				3EF4903222706D56003578F3 /* LHQFFmpegViewController.h */,
+				3EF4903322706D56003578F3 /* LHQFFmpegViewController.m */,
+				3EF4903022706D55003578F3 /* LHQFFmpegViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -404,6 +477,9 @@
 				BAA1D0FA21913537005B7422 /* LHQMessageViewVC.m */,
 				3E1D566021FC03EE00EDBD87 /* LHQRuntimeViewController.h */,
 				3E1D566121FC03EE00EDBD87 /* LHQRuntimeViewController.m */,
+				3EF4902222706CCD003578F3 /* LHQAsyncLayerViewController.h */,
+				3EF4902322706CCD003578F3 /* LHQAsyncLayerViewController.m */,
+				3EF4900F22706CCD003578F3 /* POP */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -413,6 +489,10 @@
 			children = (
 				BAA1D0FC2191354F005B7422 /* LHQMeViewVC.h */,
 				BAA1D0FD2191354F005B7422 /* LHQMeViewVC.m */,
+				3EF4903B22706D70003578F3 /* LHQDropMenuViewController.h */,
+				3EF4903A22706D70003578F3 /* LHQDropMenuViewController.m */,
+				3EF4903922706D70003578F3 /* LHQPullMenuViewController.h */,
+				3EF4903822706D70003578F3 /* LHQPullMenuViewController.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -420,6 +500,8 @@
 		3E22AD0E21D465F90019EC13 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				3EF4905722706DE0003578F3 /* EmptyBlank */,
+				3EF4905422706DE0003578F3 /* FPS */,
 				3E22AD0F21D4661E0019EC13 /* LHQCaptureTool */,
 				3E19792421B7BDCC00B798EB /* Alert */,
 			);
@@ -445,6 +527,8 @@
 		3E2E8FFC21D378D100AD3D24 /* LHQViews */ = {
 			isa = PBXGroup;
 			children = (
+				3EF48FEA22706866003578F3 /* LHQAsyncLayerCell.h */,
+				3EF48FEB22706866003578F3 /* LHQAsyncLayerCell.m */,
 				3E2E8FFD21D378DD00AD3D24 /* Carema */,
 			);
 			path = LHQViews;
@@ -540,10 +624,67 @@
 			path = Addition;
 			sourceTree = "<group>";
 		};
+		3EF4900F22706CCD003578F3 /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				3EF4901022706CCD003578F3 /* LHQCycleDemo2ViewController.h */,
+				3EF4901122706CCD003578F3 /* LHQCycleDemo2ViewController.m */,
+				3EF4901222706CCD003578F3 /* LHQGroupDemo1ViewController.h */,
+				3EF4901322706CCD003578F3 /* LHQGroupDemo1ViewController.m */,
+				3EF4901422706CCD003578F3 /* LHQPOPBasicAnimationViewController.h */,
+				3EF4901522706CCD003578F3 /* LHQPOPBasicAnimationViewController.m */,
+				3EF4901622706CCD003578F3 /* LHQPOPCustomAnimationViewController.h */,
+				3EF4901722706CCD003578F3 /* LHQPOPCustomAnimationViewController.m */,
+				3EF4901822706CCD003578F3 /* LHQPOPDecayAnimationViewController.h */,
+				3EF4901922706CCD003578F3 /* LHQPOPDecayAnimationViewController.m */,
+				3EF4901A22706CCD003578F3 /* LHQPOPGroupAnimationViewController.h */,
+				3EF4901B22706CCD003578F3 /* LHQPOPGroupAnimationViewController.m */,
+				3EF4901C22706CCD003578F3 /* LHQPOPSpringAnimationViewController.h */,
+				3EF4901D22706CCD003578F3 /* LHQPOPSpringAnimationViewController.m */,
+				3EF4901E22706CCD003578F3 /* LHQPOPViewController.h */,
+				3EF4901F22706CCD003578F3 /* LHQPOPViewController.m */,
+				3EF4902022706CCD003578F3 /* LHQTickDemo3ViewController.h */,
+				3EF4902122706CCD003578F3 /* LHQTickDemo3ViewController.m */,
+			);
+			path = POP;
+			sourceTree = "<group>";
+		};
+		3EF4903E22706D91003578F3 /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3EF4903F22706D91003578F3 /* TFDropDownMenu.h */,
+				3EF4904022706D91003578F3 /* TFDropDownMenuCollectionViewCell.h */,
+				3EF4904122706D91003578F3 /* TFDropDownMenuCollectionViewCell.m */,
+				3EF4904222706D91003578F3 /* TFDropDownMenuView.h */,
+				3EF4904322706D91003578F3 /* TFDropDownMenuView.m */,
+				3EF4904422706D91003578F3 /* TFIndexPatch.h */,
+				3EF4904522706D91003578F3 /* TFIndexPatch.m */,
+				3EF4904622706D91003578F3 /* TFMenuDefinition.h */,
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		3EF4905422706DE0003578F3 /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				3EF4905522706DE0003578F3 /* YYFPSLabel.h */,
+				3EF4905622706DE0003578F3 /* YYFPSLabel.m */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
+		3EF4905722706DE0003578F3 /* EmptyBlank */ = {
+			isa = PBXGroup;
+			children = (
+				3EF4905822706DE0003578F3 /* LHQEasyBlankPageView.h */,
+				3EF4905922706DE0003578F3 /* LHQEasyBlankPageView.m */,
+			);
+			path = EmptyBlank;
+			sourceTree = "<group>";
+		};
 		BA7F2C82218AA06000DBE4B7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3ECE5F1821E7517400D1C2BD /* LHQAddition.h */,
 				BA7F2C83218AA07500DBE4B7 /* Network */,
 				BA7F2C84218AA09800DBE4B7 /* Category */,
 				3E22AD0E21D465F90019EC13 /* Tool */,
@@ -573,6 +714,7 @@
 		BA7F2C84218AA09800DBE4B7 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3ECE5F1821E7517400D1C2BD /* LHQAddition.h */,
 				3ECE5F1221E74CE700D1C2BD /* Addition */,
 				3ECE5F1121E74C5200D1C2BD /* Util */,
 			);
@@ -870,11 +1012,13 @@
 				3E31A17721CA13E5004453D4 /* img_0.png in Resources */,
 				3E31A17621CA13E5004453D4 /* haima.json in Resources */,
 				3E572E7521FAA2AA0083D21D /* LHQVioceBackViewController.xib in Resources */,
+				3EF4903622706D56003578F3 /* LHQFFmpegHelloWorldViewController.xib in Resources */,
 				3E31A18B21CA18B3004453D4 /* paopao.json in Resources */,
 				BA94EF012189B2F8006952FB /* Assets.xcassets in Resources */,
 				3E31A18A21CA18B3004453D4 /* paopaoImg_3.png in Resources */,
 				BA94EEFF2189B2F4006952FB /* Main.storyboard in Resources */,
 				3E31A17A21CA13E5004453D4 /* img_3.png in Resources */,
+				3EF4903522706D56003578F3 /* LHQFFmpegViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,10 +1131,16 @@
 				BA21B2A1218BF119002DB83F /* LHQWordItem.m in Sources */,
 				3E19793321B7D65400B798EB /* DPDatabaseManager.m in Sources */,
 				BA7F2C96218ACABB00DBE4B7 /* UIView+Frame.m in Sources */,
+				3EF4905A22706DE0003578F3 /* YYFPSLabel.m in Sources */,
 				BA65D67021904C420046B132 /* LHQNormalRefreshHeader.m in Sources */,
 				BA7F2CBA218AF8D100DBE4B7 /* LHQBaseViewVC.m in Sources */,
 				BA65D66A219036020046B132 /* LHQCollectionVC.m in Sources */,
+				3EF4903D22706D70003578F3 /* LHQDropMenuViewController.m in Sources */,
+				3EF4903722706D56003578F3 /* LHQFFmpegViewController.m in Sources */,
+				3EF4902622706CCD003578F3 /* LHQPOPBasicAnimationViewController.m in Sources */,
+				3EF4904922706D91003578F3 /* TFIndexPatch.m in Sources */,
 				3E31A16621CA1204004453D4 /* LHQLottieViewController.m in Sources */,
+				3EF4902A22706CCD003578F3 /* LHQPOPSpringAnimationViewController.m in Sources */,
 				BA7F2CA7218AD7FB00DBE4B7 /* LHQBaseRequest.m in Sources */,
 				3E1BD66D21DF412000BFB9D8 /* LHQCropableView.m in Sources */,
 				3E19791E21B7BBF300B798EB /* LHQThread.m in Sources */,
@@ -998,9 +1148,11 @@
 				BA94EF072189B2F8006952FB /* main.m in Sources */,
 				BA65D667219033310046B132 /* LHQElementsFlowLayout.m in Sources */,
 				3E048A4C21CB389000955A1C /* LHQCameraViewController.m in Sources */,
+				3EF4902522706CCD003578F3 /* LHQGroupDemo1ViewController.m in Sources */,
 				BA7F2CB4218AF0FE00DBE4B7 /* LHQTextViewVC.m in Sources */,
 				3E12145F21B671110034AB19 /* LHQFSAudioViewController.m in Sources */,
 				BA65D67321904D6B0046B132 /* LHQAutoRefreshFooter.m in Sources */,
+				3EF4902B22706CCD003578F3 /* LHQPOPViewController.m in Sources */,
 				3E22AD1821D470620019EC13 /* LHQCarema2ViewController.m in Sources */,
 				3E1BD66721DEFA0900BFB9D8 /* LHQRectView.m in Sources */,
 				BA7F2CA6218AD7FB00DBE4B7 /* LHQRequestManager.m in Sources */,
@@ -1009,15 +1161,22 @@
 				3E3C096321BA078100CE823D /* LHQSearchBarViewController.m in Sources */,
 				BAA1D0F12191254A005B7422 /* LHQRefreshCollectionViewVC.m in Sources */,
 				3ECE5F1E21E7535D00D1C2BD /* NSString+Extension.m in Sources */,
+				3EF4904822706D91003578F3 /* TFDropDownMenuView.m in Sources */,
+				3EF4902922706CCD003578F3 /* LHQPOPGroupAnimationViewController.m in Sources */,
 				BAA1D0F5219134B2005B7422 /* LHQTabBarVC.m in Sources */,
 				3E1BD66A21DF362600BFB9D8 /* LHQImageTransformViewController.m in Sources */,
+				3EF4902C22706CCD003578F3 /* LHQTickDemo3ViewController.m in Sources */,
+				3EF4905B22706DE0003578F3 /* LHQEasyBlankPageView.m in Sources */,
 				3E19793421B7D65400B798EB /* DPDatabaseUtils.m in Sources */,
 				BAA1D0FB21913537005B7422 /* LHQMessageViewVC.m in Sources */,
 				BA65D66121902B4B0046B132 /* LHQVerticalFlowLayout.m in Sources */,
 				BAA1D0FE2191354F005B7422 /* LHQMeViewVC.m in Sources */,
 				BA65D66D21904B8F0046B132 /* LHQRefreshTableViewVC.m in Sources */,
 				BAA1D10421914628005B7422 /* LHQLeftSlideVC.m in Sources */,
+				3EF4902D22706CCD003578F3 /* LHQAsyncLayerViewController.m in Sources */,
+				3EF4904722706D91003578F3 /* TFDropDownMenuCollectionViewCell.m in Sources */,
 				3ECE5F1521E74F9600D1C2BD /* UILabel+Addition.m in Sources */,
+				3EF4902722706CCD003578F3 /* LHQPOPCustomAnimationViewController.m in Sources */,
 				3E3C096021BA06EE00CE823D /* LHQSearchBar.m in Sources */,
 				BA7F2C90218AA44900DBE4B7 /* LHQNavigationBar.m in Sources */,
 				BAA1D0F821913512005B7422 /* LHQHomeViewVC.m in Sources */,
@@ -1029,11 +1188,13 @@
 				3E2E900021D3790700AD3D24 /* LHQMaskingView.m in Sources */,
 				3E572E7621FAA2AA0083D21D /* LHQVioceBackViewController.m in Sources */,
 				3E1BD67021DF4A9500BFB9D8 /* UIImage+Extension.m in Sources */,
+				3EF4902822706CCD003578F3 /* LHQPOPDecayAnimationViewController.m in Sources */,
 				3E22AD1B21D471D20019EC13 /* LHQCameraTool.m in Sources */,
 				3E19791821B7B99600B798EB /* LHQTimer.m in Sources */,
 				BA21B29E218BF0A4002DB83F /* LHQStaticTableVC.m in Sources */,
 				BA7F2CAE218ADF8200DBE4B7 /* LHQNavigationVC.m in Sources */,
 				BA7F2CA8218AD7FB00DBE4B7 /* LHQBaseResponse.m in Sources */,
+				3EF4903C22706D70003578F3 /* LHQPullMenuViewController.m in Sources */,
 				3E22AD1521D46C9B0019EC13 /* LHQCameraMaskingView.m in Sources */,
 				BA94EEF92189B2F4006952FB /* LHQAppDelegate.m in Sources */,
 				BA7F2C9F218AD6AB00DBE4B7 /* MBProgressHUD+Extension.m in Sources */,
@@ -1041,7 +1202,10 @@
 				BAA1D10721919449005B7422 /* NSDate+Utilities.m in Sources */,
 				3E1D566221FC03EE00EDBD87 /* LHQRuntimeViewController.m in Sources */,
 				3E19792A21B7BEB400B798EB /* UIApplication+AppRootViewController.m in Sources */,
+				3EF4902422706CCD003578F3 /* LHQCycleDemo2ViewController.m in Sources */,
 				3E19791721B7B99600B798EB /* LHQAudioPlayer.m in Sources */,
+				3EF48FEC22706866003578F3 /* LHQAsyncLayerCell.m in Sources */,
+				3EF4903422706D56003578F3 /* LHQFFmpegHelloWorldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1214,7 +1378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TDPT6UAW97;
+				DEVELOPMENT_TEAM = PP4T4JWN4J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSLHQProject/Classes/Helper",
@@ -1237,7 +1401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TDPT6UAW97;
+				DEVELOPMENT_TEAM = PP4T4JWN4J;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSLHQProject/Classes/Helper",

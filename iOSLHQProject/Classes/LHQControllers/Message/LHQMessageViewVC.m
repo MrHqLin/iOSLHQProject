@@ -8,6 +8,8 @@
 
 #import "LHQMessageViewVC.h"
 #import "LHQRuntimeViewController.h"
+#import "LHQPOPViewController.h"
+#import "LHQAsyncLayerViewController.h"
 
 @interface LHQMessageViewVC ()
 
@@ -20,8 +22,12 @@
     
     LHQWordArrowItem *item0 = [LHQWordArrowItem itemWithTitle:@"Runtime理论学习" subTitle:@""];
     item0.destVc = [LHQRuntimeViewController class];
+    LHQWordArrowItem *item1 = [LHQWordArrowItem itemWithTitle:@"POP动画引擎" subTitle:@""];
+    item1.destVc = [LHQPOPViewController class];
+    LHQWordArrowItem *item2 = [LHQWordArrowItem itemWithTitle:@"异步绘制" subTitle:@""];
+    item2.destVc = [LHQAsyncLayerViewController class];
     
-    LHQItemSection *section0 = [LHQItemSection sectionWithItems:@[item0]
+    LHQItemSection *section0 = [LHQItemSection sectionWithItems:@[item0,item1,item2]
                                                  andHeaderTitle:nil
                                                     footerTitle:nil];
     [self.sections addObject:section0];

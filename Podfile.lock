@@ -27,6 +27,7 @@ PODS:
   - MJExtension (3.0.15.1)
   - MJRefresh (3.1.0)
   - MOFSPickerManager (2.1.0)
+  - pop (1.0.12)
   - Reachability (3.2)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -47,6 +48,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh (= 3.1)
   - MOFSPickerManager
+  - pop
   - Reachability
   - SDWebImage
   - YYCategories
@@ -64,6 +66,7 @@ SPEC REPOS:
     - MJExtension
     - MJRefresh
     - MOFSPickerManager
+    - pop
     - Reachability
     - SDWebImage
     - YYCategories
@@ -80,10 +83,11 @@ SPEC CHECKSUMS:
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   MOFSPickerManager: 2094d2a8bfb5cbd0495b883c12195c216ff6940f
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: bd10ba61acc1d260e16ec0433f658ba589da1a18
+PODFILE CHECKSUM: 03dd2119adf3fe0157fbd0227dc87f62e08cf9f7
 
 COCOAPODS: 1.5.3

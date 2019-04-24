@@ -16,3 +16,4 @@
 #import "NSDate+Utilities.h"
 #import "UIApplication+AppRootViewController.h"
 #import "UIImage+Extension.h"
+#import "NSString+Extension.h"

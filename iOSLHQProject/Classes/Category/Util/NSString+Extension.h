@@ -31,6 +31,19 @@
 // 限制输入emoji表情
 + (NSString *)disableEmoji:(NSString *)text;
 
+#pragma mark - 绘制
+- (void)drawInContext:(CGContextRef)context
+         withPosition:(CGPoint)p
+              andFont:(UIFont *)font
+         andTextColor:(UIColor *)color
+            andHeight:(float)height
+             andWidth:(float)width;
+- (void)drawInContext:(CGContextRef)context
+         withPosition:(CGPoint)p
+              andFont:(UIFont *)font
+         andTextColor:(UIColor *)color
+            andHeight:(float)height;
+
 @end
 
 
