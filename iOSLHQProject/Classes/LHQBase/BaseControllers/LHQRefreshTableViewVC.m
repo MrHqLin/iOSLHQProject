@@ -61,6 +61,9 @@
     ![self.tableView.mj_footer isRefreshing] ?: [self.tableView.mj_footer endRefreshing];
     self.tableView.mj_header.hidden = NO;
     self.tableView.mj_footer.hidden = NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.tableView.mj_footer.pullingPercent = 1;
+    });
 }
 
 // 子类需要调用调用

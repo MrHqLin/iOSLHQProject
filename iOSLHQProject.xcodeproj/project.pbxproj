@@ -195,6 +195,10 @@
 		3E3C095F21BA06EE00CE823D /* LHQSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQSearchBar.h; sourceTree = "<group>"; };
 		3E3C096121BA078100CE823D /* LHQSearchBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHQSearchBarViewController.h; sourceTree = "<group>"; };
 		3E3C096221BA078100CE823D /* LHQSearchBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHQSearchBarViewController.m; sourceTree = "<group>"; };
+		3E4DC7332277F953001FDE4E /* PublicKeyConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicKeyConfig.h; sourceTree = "<group>"; };
+		3E4DC7342277F9D7001FDE4E /* EnumConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumConfig.h; sourceTree = "<group>"; };
+		3E4DC7352277F9F7001FDE4E /* ColorConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConfig.h; sourceTree = "<group>"; };
+		3E4DC7362277FC69001FDE4E /* ToolConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolConfig.h; sourceTree = "<group>"; };
 		3E572E7221FAA2A90083D21D /* LHQVioceBackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHQVioceBackViewController.xib; sourceTree = "<group>"; };
 		3E572E7321FAA2A90083D21D /* LHQVioceBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQVioceBackViewController.h; sourceTree = "<group>"; };
 		3E572E7421FAA2A90083D21D /* LHQVioceBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQVioceBackViewController.m; sourceTree = "<group>"; };
@@ -592,6 +596,17 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		3E4DC7322277F8F7001FDE4E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3E4DC7332277F953001FDE4E /* PublicKeyConfig.h */,
+				3E4DC7342277F9D7001FDE4E /* EnumConfig.h */,
+				3E4DC7352277F9F7001FDE4E /* ColorConfig.h */,
+				3E4DC7362277FC69001FDE4E /* ToolConfig.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		3ECE5F1121E74C5200D1C2BD /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -689,6 +704,7 @@
 				BA7F2C84218AA09800DBE4B7 /* Category */,
 				3E22AD0E21D465F90019EC13 /* Tool */,
 				3E19791221B7B91D00B798EB /* Helper */,
+				3E4DC7322277F8F7001FDE4E /* Config */,
 				BA7F2C86218AA0BE00DBE4B7 /* LHQBase */,
 				BAA1D0F221913438005B7422 /* LHQMain */,
 				BA7F2C87218AA33700DBE4B7 /* LHQControllers */,

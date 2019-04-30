@@ -30,6 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    DLog(@"server = %@",APISERVER);
 
     LHQWordArrowItem *item01 = [LHQWordArrowItem itemWithTitle:@"录音" subTitle:@"" itemOperation:^(NSIndexPath * _Nonnull indexPath) {
         DLog(@"1");

@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LHQBaseResponse : NSObject
+typedef NS_ENUM(NSUInteger, RequestStatus) {
+    RequestStatusSuccess = 1, // 请求成功
+    RequestStatusFailed = 0, // 请求失败
+    RequestStatusTokenExpired = 501, // token凭证过期
+    RequestStatusOtherDeviceLogin = 502, // 若被另一台设备登录
+};
 
+@interface LHQBaseResponse : NSObject
 
 /** 错误 */
 @property (nonatomic, strong) NSError *error;

@@ -134,17 +134,12 @@ static NSString *jsonFileDirectory = @"LHQLocalJsons";
     return response;
 }
 
-
-
-
 #pragma mark - 打印返回日志
 - (void)LogResponse:(NSString *)urlString response:(LHQBaseResponse *)response
 {
     NSLog(@"\n[%@]---%@\n", urlString, response);
 
 }
-
-
 
 #pragma mark - 上传文件
 //  data 图片对应的二进制数据
