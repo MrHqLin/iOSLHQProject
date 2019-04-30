@@ -43,16 +43,21 @@
             backgroundImageName:(NSString *)backgroundImageName {
     
     UIButton *button = [[self alloc] init];
-    
     [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-    
     [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateHighlighted];
-    
     [button setBackgroundImage:[UIImage imageNamed:backgroundImageName] forState:UIControlStateNormal];
-    
     [button sizeToFit];
-    
     return button;
+}
+
+- (void)imageUpAndTitleDownWithInterval:(CGFloat)interval {
+    [self setTitleEdgeInsets:UIEdgeInsetsMake(self.imageView.frame.size.height+interval, -self.imageView.frame.size.width, 0, 0)];
+    [self setImageEdgeInsets:UIEdgeInsetsMake(-self.imageView.frame.size.height/2, 0, 0, -self.titleLabel.frame.size.width)];
+}
+
+- (void)addBorderWithBorderColor:(UIColor *)borderColor borderWidth:(float)borderwidth {
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.borderWidth = borderwidth;
 }
 
 

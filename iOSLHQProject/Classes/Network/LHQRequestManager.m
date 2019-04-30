@@ -13,18 +13,23 @@
 @implementation LHQRequestManager
 
 
-#pragma mark - POST_GET
+#pragma mark - POST_GET_PUT
 // post
 - (void)POST:(NSString *)urlString parameters:(id)parameters completion:(void (^)(LHQBaseResponse *))completion
 {
     [self request:@"POST" URL:urlString parameters:parameters completion:completion];
-
 }
 
 //get
 - (void)GET:(NSString *)urlString parameters:(id)parameters completion:(void (^)(LHQBaseResponse *))completion
 {
     [self request:@"GET" URL:urlString parameters:parameters completion:completion];
+}
+
+// put
+- (void)PUT:(NSString *)urlString parameters:(id)parameters completion:(void (^)(LHQBaseResponse *))completion
+{
+    [self request:@"PUT" URL:urlString parameters:parameters completion:completion];
 }
 
 #pragma mark - post & get
@@ -62,6 +67,10 @@
     
     if ([method isEqualToString:@"POST"]) {
         [self POST:urlString parameters:parameters progress:nil success:success failure:failure];
+    }
+    
+    if ([method isEqualToString:@"PUT"]) {
+        [self PUT:urlString parameters:parameters success:success failure:failure];
     }
     
 }
@@ -117,6 +126,9 @@ static NSString *jsonFileDirectory = @"LHQLocalJsons";
     
     if (!LHQIsEmpty(responseObject)) {
         response.responseObject = responseObject;
+        response.errorMsg = responseObject[@"msg"];
+        response.statusCode = [responseObject[@"code"] integerValue];
+        
     }
     if (error) {
         response.error = error;

@@ -7,18 +7,30 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NEUBase64.h"
+#import "NSData+AES.h"
 
 @interface NSString (Extension)
 
-#pragma mark -- 加密
+#pragma mark - 加密解密
+
+#pragma mark - md5加密
 // md5加密
 - (NSString *)md5;
-// Base64加密密码
-- (NSString *)base64WithPassword;
-// 对字符串进行Base64编码，然后返回编码后的结果
-- (NSString *)base64EncodeString;
-// 对base64编码后的字符串进行解码
-- (NSString *)base64DecodeString;
+
+#pragma mark - base64
+
++ (NSString*)encodeBase64String:(NSString *)input;
++ (NSString*)decodeBase64String:(NSString *)input;
+
++ (NSString*)encodeBase64Data:(NSData *)data;
++ (NSString*)decodeBase64Data:(NSData *)data;
+
+#pragma mark - AES加密
+//将string转成带密码的data
++(NSString*)encryptAESData:(NSString*)string;
+//将带密码的data转成string
++(NSString*)decryptAESData:(NSString *)string;
 
 #pragma mark -- 文字设置
 // 首行缩进及换行文字左对齐

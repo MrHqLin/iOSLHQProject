@@ -19,5 +19,7 @@
 
 - (void)POST:(NSString *)URLString parameters:(id)parameters completion:(void(^)(LHQBaseResponse *response))completion;
 
+- (void)PUT:(NSString *)URLString parameters:(id)parameters completion:(void(^)(LHQBaseResponse *response))completion;
+
 
 @end

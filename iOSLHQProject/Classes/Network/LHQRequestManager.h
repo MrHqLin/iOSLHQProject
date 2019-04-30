@@ -36,6 +36,8 @@ typedef LHQBaseResponse *(^ResponseFormat)(LHQBaseResponse *response);
 
 - (void)GET:(NSString *)urlString parameters:(id)parameters completion:(void (^)(LHQBaseResponse *response))completion;
 
+- (void)PUT:(NSString *)urlString parameters:(id)parameters completion:(void (^)(LHQBaseResponse *))completion;
+
 /*
   上传
    data 数据对应的二进制数据

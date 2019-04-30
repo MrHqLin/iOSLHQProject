@@ -21,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 // 绘制圆角
 + (UIImage *)drawCircleImageWithImage:(UIImage *)image size:(CGSize)size cornerRadius:(CGFloat)radius;
 
+#pragma mark --- 生成二维码
++ (UIImage *)createQRCodeWithString:(NSString *)string imageWidth:(CGFloat)imageWidth;
+- (UIImage *)createImageWithFilterCIImage:(CIImage *)image size:(CGFloat)size;
+
 @end
 
 NS_ASSUME_NONNULL_END

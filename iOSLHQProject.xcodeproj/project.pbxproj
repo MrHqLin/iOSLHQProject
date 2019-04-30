@@ -42,6 +42,9 @@
 		3E31A18B21CA18B3004453D4 /* paopao.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E31A18621CA18B3004453D4 /* paopao.json */; };
 		3E3C096021BA06EE00CE823D /* LHQSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C095E21BA06EE00CE823D /* LHQSearchBar.m */; };
 		3E3C096321BA078100CE823D /* LHQSearchBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E3C096221BA078100CE823D /* LHQSearchBarViewController.m */; };
+		3E4DC74022785025001FDE4E /* NEUBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4DC73E22785025001FDE4E /* NEUBase64.m */; };
+		3E4DC74322785108001FDE4E /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4DC74222785108001FDE4E /* NSData+AES.m */; };
+		3E4DC747227858E1001FDE4E /* APIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4DC746227858E1001FDE4E /* APIService.m */; };
 		3E572E7521FAA2AA0083D21D /* LHQVioceBackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E572E7221FAA2A90083D21D /* LHQVioceBackViewController.xib */; };
 		3E572E7621FAA2AA0083D21D /* LHQVioceBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E572E7421FAA2A90083D21D /* LHQVioceBackViewController.m */; };
 		3E572E7921FAABED0083D21D /* LHQFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E572E7821FAABED0083D21D /* LHQFormViewController.m */; };
@@ -199,6 +202,13 @@
 		3E4DC7342277F9D7001FDE4E /* EnumConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnumConfig.h; sourceTree = "<group>"; };
 		3E4DC7352277F9F7001FDE4E /* ColorConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConfig.h; sourceTree = "<group>"; };
 		3E4DC7362277FC69001FDE4E /* ToolConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolConfig.h; sourceTree = "<group>"; };
+		3E4DC73D22785025001FDE4E /* NEUBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUBase64.h; sourceTree = "<group>"; };
+		3E4DC73E22785025001FDE4E /* NEUBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEUBase64.m; sourceTree = "<group>"; };
+		3E4DC73F22785025001FDE4E /* NEUDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUDefines.h; sourceTree = "<group>"; };
+		3E4DC74122785108001FDE4E /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		3E4DC74222785108001FDE4E /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		3E4DC745227858E1001FDE4E /* APIService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIService.h; sourceTree = "<group>"; };
+		3E4DC746227858E1001FDE4E /* APIService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIService.m; sourceTree = "<group>"; };
 		3E572E7221FAA2A90083D21D /* LHQVioceBackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHQVioceBackViewController.xib; sourceTree = "<group>"; };
 		3E572E7321FAA2A90083D21D /* LHQVioceBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHQVioceBackViewController.h; sourceTree = "<group>"; };
 		3E572E7421FAA2A90083D21D /* LHQVioceBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHQVioceBackViewController.m; sourceTree = "<group>"; };
@@ -504,6 +514,7 @@
 		3E22AD0E21D465F90019EC13 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				3E4DC73C22785025001FDE4E /* NEUBase64 */,
 				3EF4905722706DE0003578F3 /* EmptyBlank */,
 				3EF4905422706DE0003578F3 /* FPS */,
 				3E22AD0F21D4661E0019EC13 /* LHQCaptureTool */,
@@ -607,6 +618,25 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		3E4DC73C22785025001FDE4E /* NEUBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				3E4DC73D22785025001FDE4E /* NEUBase64.h */,
+				3E4DC73E22785025001FDE4E /* NEUBase64.m */,
+				3E4DC73F22785025001FDE4E /* NEUDefines.h */,
+			);
+			path = NEUBase64;
+			sourceTree = "<group>";
+		};
+		3E4DC7442278589A001FDE4E /* LHQAPI */ = {
+			isa = PBXGroup;
+			children = (
+				3E4DC745227858E1001FDE4E /* APIService.h */,
+				3E4DC746227858E1001FDE4E /* APIService.m */,
+			);
+			path = LHQAPI;
+			sourceTree = "<group>";
+		};
 		3ECE5F1121E74C5200D1C2BD /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,6 +654,8 @@
 				3E1BD66F21DF4A9500BFB9D8 /* UIImage+Extension.m */,
 				3ECE5F1C21E7535D00D1C2BD /* NSString+Extension.h */,
 				3ECE5F1D21E7535D00D1C2BD /* NSString+Extension.m */,
+				3E4DC74122785108001FDE4E /* NSData+AES.h */,
+				3E4DC74222785108001FDE4E /* NSData+AES.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -710,6 +742,7 @@
 				BA7F2C87218AA33700DBE4B7 /* LHQControllers */,
 				3E2E8FFC21D378D100AD3D24 /* LHQViews */,
 				BA7F2C89218AA37500DBE4B7 /* LHQModels */,
+				3E4DC7442278589A001FDE4E /* LHQAPI */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1140,6 +1173,7 @@
 			files = (
 				BA21B2A4218BF2F9002DB83F /* LHQWordArrowItem.m in Sources */,
 				3E19792721B7BDE700B798EB /* LHQAlertViewService.m in Sources */,
+				3E4DC74322785108001FDE4E /* NSData+AES.m in Sources */,
 				BA7F2C9C218AD64400DBE4B7 /* UIColor+Random.m in Sources */,
 				3ECE5F1021E74B7300D1C2BD /* UIButton+Addition.m in Sources */,
 				BA21B2AA218BF54F002DB83F /* LHQSettingCell.m in Sources */,
@@ -1157,6 +1191,7 @@
 				3EF4904922706D91003578F3 /* TFIndexPatch.m in Sources */,
 				3E31A16621CA1204004453D4 /* LHQLottieViewController.m in Sources */,
 				3EF4902A22706CCD003578F3 /* LHQPOPSpringAnimationViewController.m in Sources */,
+				3E4DC74022785025001FDE4E /* NEUBase64.m in Sources */,
 				BA7F2CA7218AD7FB00DBE4B7 /* LHQBaseRequest.m in Sources */,
 				3E1BD66D21DF412000BFB9D8 /* LHQCropableView.m in Sources */,
 				3E19791E21B7BBF300B798EB /* LHQThread.m in Sources */,
@@ -1184,6 +1219,7 @@
 				3EF4902C22706CCD003578F3 /* LHQTickDemo3ViewController.m in Sources */,
 				3EF4905B22706DE0003578F3 /* LHQEasyBlankPageView.m in Sources */,
 				3E19793421B7D65400B798EB /* DPDatabaseUtils.m in Sources */,
+				3E4DC747227858E1001FDE4E /* APIService.m in Sources */,
 				BAA1D0FB21913537005B7422 /* LHQMessageViewVC.m in Sources */,
 				BA65D66121902B4B0046B132 /* LHQVerticalFlowLayout.m in Sources */,
 				BAA1D0FE2191354F005B7422 /* LHQMeViewVC.m in Sources */,

@@ -22,7 +22,6 @@
             return ;
         }
         
-        
         !completion ?: completion(response);
         
     }];
@@ -37,6 +36,19 @@
             return ;
         }
         
+        !completion ?: completion(response);
+        
+    }];
+}
+
+- (void)PUT:(NSString *)URLString parameters:(id)parameters completion:(void(^)(LHQBaseResponse *response))completion
+{
+    LHQWeak(self);
+    [[LHQRequestManager sharedManager] PUT:URLString parameters:parameters completion:^(LHQBaseResponse *response) {
+        
+        if (!weakself) {
+            return ;
+        }
         
         !completion ?: completion(response);
         

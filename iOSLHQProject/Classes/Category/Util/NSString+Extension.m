@@ -9,9 +9,11 @@
 #import "NSString+Extension.h"
 #import "CommonCrypto/CommonDigest.h"
 
+#define KEY @""
+
 @implementation NSString (Extension)
 
-#pragma mark -- 加密
+#pragma mark -- md5加密
 // md5加密
 - (NSString *)md5 {
     const char *cStr = [self UTF8String];
@@ -26,27 +28,60 @@
              result[12], result[13], result[14], result[15]
              ] lowercaseString];
 }
-// Base64加密密码
-- (NSString *)base64WithPassword{
-    NSString *string = [NSString stringWithFormat:@"KL%@", [self base64EncodeString]];
-    return string;
+
+#pragma mark - base64
+
++ (NSString*)encodeBase64String:(NSString * )input {
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [NEUBase64 encodeData:data];
+    NSString *base64String = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return base64String;
 }
 
-// 对字符串进行Base64编码，然后返回编码后的结果
-- (NSString *)base64EncodeString{
-    //1.先把字符串转换为二进制数据
-    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
-    //2.对二进制数据进行base64编码，返回编码后的字符串
-    return [data base64EncodedStringWithOptions:0];
++ (NSString*)decodeBase64String:(NSString * )input {
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [NEUBase64 decodeData:data];
+    NSString *base64String = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return base64String;
 }
 
-// 对base64编码后的字符串进行解码
-- (NSString *)base64DecodeString{
-    //1.将base64编码后的字符串『解码』为二进制数据
-    NSData *data = [[NSData alloc]initWithBase64EncodedString:self options:0];
-    //2.把二进制数据转换为字符串返回
-    return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
++ (NSString*)encodeBase64Data:(NSData *)data {
+    data = [NEUBase64 encodeData:data];
+    NSString *base64String = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return base64String;
 }
+
++ (NSString*)decodeBase64Data:(NSData *)data {
+    data = [NEUBase64 decodeData:data];
+    NSString *base64String = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return base64String;
+}
+
+#pragma mark - AES加密
+//将string转成带密码的data
++(NSString*)encryptAESData:(NSString*)string
+{
+    //将nsstring转化为nsdata
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    //使用密码对nsdata进行加密
+    NSData *encryptedData = [data AES128EncryptWithKey:KEY];
+    //    NSString *enString = [[NSString alloc] initWithData:encryptedData encoding:NSUTF8StringEncoding];
+    //返回进行base64进行转码的加密字符串
+    return [self encodeBase64Data:encryptedData];
+}
+
+//将带密码的data转成string
++(NSString*)decryptAESData:(NSString *)string
+{
+    //base64解密
+    NSData *decodeBase64Data=[NEUBase64 decodeString:string];
+    //使用密码对data进行解密
+    NSData *decryData = [decodeBase64Data AES128DecryptWithKey:KEY];
+    //将解了密码的nsdata转化为nsstring
+    NSString *str = [[NSString alloc] initWithData:decryData encoding:NSUTF8StringEncoding];
+    return str;
+}
+
 
 #pragma mark -- 文字设置
 // 首行缩进及换行文字左对齐
